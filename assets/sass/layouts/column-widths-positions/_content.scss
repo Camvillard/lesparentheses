@@ -1,0 +1,38 @@
+/* ### Content */
+
+.content {
+  float: right;
+  width: $content--width;
+
+   @media screen and (max-width: 1340px) {
+    width: $content--width-larger-screen;
+  }
+
+   @media screen and (max-width: 1200px) {
+    width: $content--width-large-screen;
+  }
+
+  .content-sidebar-sidebar &,
+  .sidebar-content-sidebar &,
+  .sidebar-sidebar-content & {
+    width: $content-both-sidebars--width;
+
+     @media screen and (max-width: 1340px) {
+      width: $content-both-sidebars--width-larger-screen;
+    }
+
+     @media screen and (max-width: 1200px) {
+      width: $content-both-sidebars--width-large-screen;
+    }
+  }
+
+  .content-sidebar &,
+  .content-sidebar-sidebar &,
+  .sidebar-content-sidebar & {
+    float: left;
+  }
+
+  .full-width-content & {
+    width: 100%;
+  }
+}

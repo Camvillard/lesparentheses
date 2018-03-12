@@ -1,0 +1,58 @@
+//
+// Neat Columns - using the Neat framework
+//=======================================
+
+$neat-grid: (
+  columns: 12,
+  gutter: 20px,
+);
+
+
+.one-half,
+.three-sixths,
+.two-fourths {
+  @include grid-column(3);
+}
+
+
+.one-third,
+.two-sixths {
+  @include grid-column(3);
+}
+
+.four-sixths,
+.two-thirds {
+  @include grid-column(3);
+}
+
+.one-fourth {
+  @include grid-column(3);
+}
+
+.three-fourths {
+  @include grid-column(3);
+}
+
+.one-sixth {
+  @include grid-column(3);
+}
+
+.five-sixths {
+  @include grid-column(3);
+}
+
+.last {
+  clear: right;
+}
+
+.first {
+  clear: left;
+}
+
+.one-half {
+  clear: left;
+
+  &.last {
+    clear: none;
+  }
+}

@@ -1,0 +1,56 @@
+.to-top {
+	display: inline-block;
+	width: 220px;
+	position: fixed;
+  bottom: 40%;
+  left: 0;
+  color: #fff;
+	text-align: center;
+	visibility:hidden;
+	opacity:0;
+	transform: rotate(-90deg);
+	transform-origin: top left;
+	-webkit-transition:all .3s;
+	-moz-transition:all .3s;
+	transition:all .3s;
+	z-index: 1000;
+
+  &.a {
+  	padding: 0px;
+  	font-size: 14px;
+  	font-size: 1.4rem;
+  	text-decoration: none;
+  	text-transform: uppercase;
+  }
+
+  &.top-is-visible {
+  	visibility:visible;
+  	opacity:1;
+  }
+
+&.top-fade-out {
+  	opacity:1;
+  }
+
+  &:hover {
+    background-color: #683a61;
+    color: #fff;
+  }
+
+  @media only screen and (min-width: 1024px) {
+  		position: fixed;
+  		bottom: 214px;
+  		right: 0;
+  		transform: none;
+  		padding-top: 12px;
+  		padding-bottom: 12px;
+      font-size: 16px;
+      font-size: 1.6rem;
+  		border-left: 0px;
+  		color: #683a61;
+      height: auto;
+      width: 80px;
+  	}
+
+
+}

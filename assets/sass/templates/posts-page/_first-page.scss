@@ -1,0 +1,19 @@
+/* first page of the blog posts - homepage
+--------------------------------------------- */
+
+body.home {
+  background-color: $white;
+  border: $border--thin-purple;
+}
+
+article {
+  @include grid-column(12);
+  @include grid-container;
+  @media screen and (min-width: 768px) {
+    @include grid-column(12);
+    &:nth-of-type(2n+1){
+      clear: both;
+    }
+
+  }
+}
