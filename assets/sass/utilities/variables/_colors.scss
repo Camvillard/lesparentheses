@@ -2,86 +2,90 @@
 //===================
 $white: #fff;
 $black: #000;
-$red: #c3251d;
-$gray--light: #ccc;
-$gray--lighter: #eee;
-$gray--light: #ddd;
-$gray--medium: #777;
-$gray: #333;
+
+$gris-clair: #bcc3c9;
+$gris-moyen: #555a60;
+
+$mint-clair: #e8f9f1;
+$taupe-clair: #d1c8c7;
+$vieux-rose: #dba9a9;
+$bleu-gris: #393d45;
+$gris-argent: #99a7ad;
+
 
 //
 // Color Configuration
 //===========================
 
-$link--color: $red;
-$link--hover-color: $gray;
+$link--color: $vieux-rose;
+$link--hover-color: $gris-argent;
 
 // Elements
-$base__color: $gray;
-$body--background-color: $gray--lighter;
+$base__color: $gris-argent;
+$body--background-color: $gris-clair;
 
 // Form Elements
 $input--background-color: $white;
-$input--border-color: $gray--light;
-$input--color: $gray;
-$input--focus-border-color: $gray--light;
-$button--background-color: $gray;
+$input--border-color: $gris-clair;
+$input--color: $gris-argent;
+$input--focus-border-color: $gris-clair;
+$button--background-color: $gris-argent;
 $button--color: $white;
-$button--hover-background-color: $red;
+$button--hover-background-color: $vieux-rose;
 $button--hover-color: $white;
-$button--disabled-background-color: $gray--lighter;
-$button--disable-color: $gray--medium;
+$button--disabled-background-color: $gris-clair;
+$button--disable-color: $gris-moyen;
 
 //
 // Header
 //======================
 $site-header--background-color: $white;
-$site-title--link-color: $gray;
+$site-title--link-color: $gris-argent;
 
 //
 // Navigation
 //============================
-$nav--link-color: $gray;
-$nav--hover-color: $red;
-$submenu--border-color: $gray--lighter;
+$nav--link-color: $gris-argent;
+$nav--hover-color: $vieux-rose;
+$submenu--border-color: $gris-clair;
 $submenu--link-background-color: $white;
 
 $primary-nav--background-color: $white;
-$primary-nav--border-color: $gray--lighter;
+$primary-nav--border-color: $gris-clair;
 $primary-nav--link-color: $nav--link-color;
 
 $secondary-nav--background-color: $white;
-$secondary-nav--border-color: $gray--lighter;
+$secondary-nav--border-color: $gris-clair;
 $secondary-nav--link-color: $nav--link-color;
 
 $js-nav--background-color: $white;
 $js-nav--hover-color: $black;
-$js-nav--focus-color: $red;
+$js-nav--focus-color: $vieux-rose;
 
 $nav-toggle--background-color: $white;
-$nav-toggle--color: $gray;
+$nav-toggle--color: $gris-argent;
 
 $archive-pagination--background-color: $white;
-$archive-pagination--color: $gray;
-$archive-pagination--hover-background-color: $red;
+$archive-pagination--color: $gris-argent;
+$archive-pagination--hover-background-color: $vieux-rose;
 $archive-pagination--hover-color: $white;
 
 //
 // Footer
 //============================
 $siteFooter--background-color: $white;
-$site-footer--border-color: $gray--lighter;
+$site-footer--border-color: $gris-clair;
 $footer-widgets--background-color: $white;
 
 //
 // Entry Content
 //===================
-$entry-footer__meta--border-color: $gray--lighter;
+$entry-footer__meta--border-color: $gris-clair;
 $entry--background-color: $white;
-$entry-title--link-color: $gray;
-$entry-title--hover-color: $red;
-$entry-content__code--background-color: $gray--lighter;
-$entry-content__code--color: $gray;
+$entry-title--link-color: $gris-argent;
+$entry-title--hover-color: $vieux-rose;
+$entry-content__code--background-color: $gris-clair;
+$entry-content__code--color: $gris-argent;
 
 //
 // Comments
@@ -91,22 +95,22 @@ $comment--background-color: $white;
 //
 // Widgets
 //===================
-$widget-title--link-color: $gray;
+$widget-title--link-color: $gris-argent;
 
 
 //
 // Plugins
 //===================
-$enews--background-color: $gray;
+$enews--background-color: $gris-argent;
 $enews--color: $white;
-$enews__input--border-color: $gray;
-$enews__submit-button--background-color: $red;
+$enews__input--border-color: $gris-argent;
+$enews__submit-button--background-color: $vieux-rose;
 $enews__submit-button--color: $white;
 $enews__submit-button__BackgroundHoverColor: $white;
-$enews__submit-button--hover-color: $red;
+$enews__submit-button--hover-color: $vieux-rose;
 
 // General Components
 $breadcrumbs--background-color: $white;
 $author-box--background-color: $white;
 $after-entry--background-color: $white;
-$archive-description--background-color: $gray--light;
+$archive-description--background-color: $gris-clair;

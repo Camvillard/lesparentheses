@@ -1,0 +1,34 @@
+/* ----- front page : la derniere histoire ----- */
+
+.featured-content-la-derniere-histoire {
+
+  position: relative;
+
+  .widget-title {
+    color: $gris-argent;
+    @include rem( font-size, $principal-widget--font-size );
+    text-transform: uppercase;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -220px;
+    top: 20px;
+  }
+
+  .entry-title a {
+    @include rem( font-size, $principal-widget--article-font-size );
+    text-transform: uppercase;
+    color: $bleu-gris;
+  }
+
+  .post-info {
+    @include rem( font-size, $widget-postinfo--font-size );
+    font-family: $widget-postinfo--font-family;
+    font-style: italic;
+  }
+
+  article {
+    @include grid-column(10);
+    float: right;
+  }
+
+}
