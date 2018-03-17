@@ -3,17 +3,5 @@
 
 body.home {
   background-color: $white;
-  border: $border--large-gris;
-}
-
-article {
-  @include grid-column(12);
-  @include grid-container;
-  @media screen and (min-width: 768px) {
-    @include grid-column(12);
-    &:nth-of-type(2n+1){
-      clear: both;
-    }
-
-  }
+  //border: $border--large-gris;
 }

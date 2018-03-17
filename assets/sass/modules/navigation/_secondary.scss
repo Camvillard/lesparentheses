@@ -4,4 +4,19 @@
 
 .nav-secondary {
   background-color: $secondary-nav--background-color;
+  @include grid-column(4);
+  float: right;
+}
+
+.menu-secondary {
+
+  .menu-item {
+    display: block;
+  }
+
+  a {
+    padding: 8px 12px;
+    text-align: center;
+  }
+
 }

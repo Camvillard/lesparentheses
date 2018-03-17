@@ -11,7 +11,7 @@
 namespace lesparentheses;
 
 
-add_filter( 'get_the_content_more_link', __NAMESPACE__ . '\modify_the_content_more_link', 10, 2 );
+//add_filter( 'get_the_content_more_link', __NAMESPACE__ . '\modify_the_content_more_link', 10, 2 );
 /**
  * Modify the content more_link.
  *

@@ -59,8 +59,8 @@ remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
     'after'  => '</div></div>',
   ) );
 
-  genesis_widget_area( 'frontpage-autres-histoires', array(
-    'before' => '<div class="frontpage-autres-histoires"><div class="wrap">',
+  genesis_widget_area( 'frontpage-petites-parentheses', array(
+    'before' => '<div class="frontpage-petites-parentheses"><div class="wrap">',
     'after'  => '</div></div>',
   ) );
 

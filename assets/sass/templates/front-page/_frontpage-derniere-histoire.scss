@@ -2,33 +2,53 @@
 
 .featured-content-la-derniere-histoire {
 
+  max-width: $max-width--responsive;
+  margin: auto;
   position: relative;
 
   .widget-title {
     color: $gris-argent;
-    @include rem( font-size, $principal-widget--font-size );
+    @include rem( font-size, $principal-widget--title-font-size );
     text-transform: uppercase;
     transform: rotate(-90deg);
     position: absolute;
-    left: -220px;
-    top: 20px;
+    left: -80px;
+    top: 355px;
   }
 
   .entry-title a {
-    @include rem( font-size, $principal-widget--article-font-size );
+    @include rem( font-size, $principal-widget--article-title-font-size );
     text-transform: uppercase;
     color: $bleu-gris;
   }
 
   .post-info {
-    @include rem( font-size, $widget-postinfo--font-size );
-    font-family: $widget-postinfo--font-family;
+    @include rem( font-size, $principal-widget--post-info-font-size );
+    font-family: $frontpage-widget-postinfo--font-family;
     font-style: italic;
+    padding-left: 0px;
   }
 
   article {
-    @include grid-column(10);
+    @include grid-column(11);
     float: right;
+
+    p {
+      padding-left: 30px;
+    }
+
+  a.more-link {
+      @include rem( font-size, $principal-widget--more-link-font-size );
+      float: right;
+      color: $principal-widget--more-link-color;
+      text-decoration: none;
+      font-weight: $font-weight--bold;
+    }
+  }
+
+
+  @media only screen and (min-width: $screen-size--huge) {
+    max-width: $max-width;
   }
 
 }

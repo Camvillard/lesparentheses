@@ -1,1 +1,54 @@
 /* ----- front page : autres histoires ----- */
+
+.featured-content-autres-histoires {
+
+  max-width: $max-width--responsive;
+  margin: auto;
+
+  .widget-title {
+    color: $gris-argent;
+    @include rem( font-size, $principal-widget--title-font-size );
+    text-transform: uppercase;
+    padding-left: 20px;
+  }
+
+  article {
+
+    @include grid-column(12, $frontpage-secondary-widgets-grid);
+    float: left;
+    position: relative;
+
+    .entry-title a {
+      @include rem( font-size, $secondary-widget--article-title-font-size );
+      text-transform: uppercase;
+      color: $bleu-gris;
+    }
+
+      @media only screen and (min-width: $screen-size--medium) {
+
+        @include grid-column(5, $frontpage-secondary-widgets-grid);
+
+        .entry-title a {
+          @include rem( font-size, $secondary-widget--article-title-font-size );
+        }
+
+      }
+
+      @media only screen and (min-width: $screen-size--regular) {
+
+          .post-info {
+            position: absolute;
+            top: 0;
+            left: -6px;
+            transform: rotate(90deg);
+            transform-origin: top left;
+            font-style: italic;
+            @include rem( font-size, $secondary-widget--post-info-font-size );
+          }
+      }
+  }
+
+  @media only screen and (min-width: $screen-size--huge) {
+    max-width: $max-width;
+  }
+}

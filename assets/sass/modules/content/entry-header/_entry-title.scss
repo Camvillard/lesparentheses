@@ -4,6 +4,7 @@
 
 .entry-title {
   @include rem( font-size, $entry-title--font-size );
+      text-transform: uppercase;
 
   a {
     color: $entry-title--link-color;

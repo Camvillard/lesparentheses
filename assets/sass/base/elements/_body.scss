@@ -5,6 +5,7 @@ html {
 
 body {
   background-color: $body--background-color;
+  border: $border--huge-vieux-rose;
   color: $base__color;
   font-family: $base--font-family;
   @include rem( font-size, $base--font-size );

@@ -3,12 +3,19 @@
 //==============================
 
 .entry {
+  max-width: $max-width--responsive;
   background-color: $entry--background-color;
-  margin-bottom: 40px;
-  padding: 70px 80px;
+  padding: 30px;
+  margin-bottom: 5%;
 
-  @media only screen and (max-width: 860px) {
-    padding: 30px;
-    margin-bottom: 5%;
+  @media only screen and (min-width : $screen-size--medium) {
+    margin-bottom: 40px;
+    padding: 70px 40px;
   }
+
+  @media only screen and (min-width : $screen-size--huge) {
+    max-width: $max-width--huge-screen;
+    margin: auto;
+  }
+
 }

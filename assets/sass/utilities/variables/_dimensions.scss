@@ -2,17 +2,35 @@
 // Dimensions Variables
 //=======================
 
-$base--width: 1200;
+$base--width: 1280;
 $gutter: 40px;
+
+//
+// Device Screen Sizes
+//==========================
+
+$screen-size--smallest: 320px;
+$screen-size--small: 480px;
+$screen-size--medium: 860px;
+$screen-size--regular: 1024px;
+$screen-size--large: 1200px;
+$screen-size--big: 1340px;
+$screen-size--huge: 1600px;
+
 
 //
 // Max Widths
 //==========================
 $max-width: $base--width + px;
-$max-width-larger-screen: 1140px;
-$max-width-large-screen: 960px;
-$max-width--medium-screen: 800px;
+$max-width--huge-screen: $max-width;
+$max-width--big-screen: 1180px;
+$max-width--large-screen: 1000px;
+$max-width--regular-screen: 980px;
+$max-width--medium-screen: 780px;
 $max-width__landing-page: 800px;
+$max-width--fullwidth: 100vw;
+
+$max-width--responsive: 80vw;
 
 //
 // Content Widths

@@ -7,9 +7,9 @@ $font-family--josefin: 'Josefin Sans', sans-serif;
 $html--font-size: 62.5%;
 
 $base--font-family: $font-family--roboto;
-$base--font-size: 20px;
-$base--font-size--small-screen: 18px;
-$base__div--font-size: 2rem;
+$base--font-size: 16px;
+$base--font-size--small-screen: 16px;
+$base__div--font-size: 1.6rem;
 $base__div--font-size--small-screen: 1.8rem;
 $base--line-height: 1.625;
 
@@ -62,7 +62,9 @@ $entry-meta--font-size: 16px;
 $entry-header__entry-meta--font-size: 16px;
 $entry-footer__entry-meta--font-size: 16px;
 
-$entry-title--font-size: 36px;
+$entry-title--font-size: 48px;
+$entry-title--mobile--font-size: 36px;
+$entry-title--tablet--font-size: 36px;
 
 //
 // Comments
@@ -74,12 +76,97 @@ $comments--font-size: 16px;
 //===================
 $widget-title--font-size: 18px;
 $featured-content__entry-title--font-size: 20px;
+$frontpage-widget-postinfo--font-family: $font-family--josefin;
 
-$principal-widget--font-size: 48px;
-$principal-widget--article-font-size: 56px;
+$frontpage-widget--content-font-size: 18px;
+$frontpage-widget--mobile--content-font-size: 18px;
+$frontpage-widget--tablet--content-font-size: 18px;
 
-$widget-postinfo--font-size: 22px;
-$widget-postinfo--font-family: $font-family--josefin;
+
+//regular
+$principal-widget--title-font-size: 36px;
+$principal-widget--article-title-font-size: 78px;
+$principal-widget--more-link-font-size: 78px;
+$principal-widget--post-info-font-size: 22px;
+
+//mobile
+$principal-widget--mobile--title-font-size: 36px;
+$principal-widget--mobile--article-title-font-size: 78px;
+$principal-widget--mobile--more-link-font-size: 78px;
+$principal-widget--mobile--post-info-font-size: 22px;
+
+//tablet
+$principal-widget--tablet--title-font-size: 36px;
+$principal-widget--tablet--article-title-font-size: 78px;
+$principal-widget--tablet--more-link-font-size: 78px;
+$principal-widget--tablet--post-info-font-size: 22px;
+
+
+// regular
+$secondary-widget--title-font-size: 36px;
+$secondary-widget--article-title-font-size: 42px;
+$secondary-widget--more-link-font-size: 32px;
+$secondary-widget--post-info-font-size: 16px;
+
+//mobile
+$secondary-widget--mobile--title-font-size: 36px;
+$secondary-widget--mobile--article-title-font-size: 42px;
+$secondary-widget--mobile--more-link-font-size: 32px;
+$secondary-widget--mobile--post-info-font-size: 16px;
+
+//tablet
+$secondary-widget--tablet--title-font-size: 36px;
+$secondary-widget--tablet--article-title-font-size: 42px;
+$secondary-widget--tablet--more-link-font-size: 32px;
+$secondary-widget--tablet--post-info-font-size: 16px;
+
+
+//regular
+$about-widget--title-font-size: 36px;
+$about-widget--about-title-font-size: 42px;
+$about-widget--article-font-size: 42px;
+$about-widget--more-link-font-size: 32px;
+$about-widget--post-info-font-size: 16px;
+
+//mobile
+$about-widget--mobile--title-font-size: 36px;
+$about-widget--mobile--about-title-font-size: 42px;
+$about-widget--mobile--article-font-size: 42px;
+$about-widget--mobile--more-link-font-size: 32px;
+$about-widget--mobile--post-info-font-size: 16px;
+
+//tablet
+$about-widget--tablet--title-font-size: 36px;
+$about-widget--tablet--about-title-font-size: 42px;
+$about-widget--tablet--article-font-size: 42px;
+$about-widget--tablet--more-link-font-size: 32px;
+$about-widget--tablet--post-info-font-size: 16px;
+
+
+//regular
+$parentheses-widget--title-font-size: 28px;
+$parentheses-widget--description-font-size: 22px;
+$parentheses-widget--article-title-font-size: 36px;
+$parentheses-widget--article-excerpt-font-size: 18px;
+$parentheses-widget--more-link-font-size: 32px;
+$parentheses-widget--post-info-font-size: 16px;
+
+//mobile (75%)
+$parentheses-widget--mobile--title-font-size: 24px;
+$parentheses-widget--mobile--article-title-font-size: 30px;
+$parentheses-widget--mobile--article-excerpt-font-size: 16px;
+$parentheses-widget--mobile--more-link-font-size: 28px;
+$parentheses-widget--mobile--post-info-font-size: 14px;
+
+//tablet (85%)
+$parentheses-widget--tablet--title-font-size: 20px;
+$parentheses-widget--tablet--article-title-font-size: 28px;
+$parentheses-widget--tablet--article-excerpt-font-size: 14px;
+$parentheses-widget--tablet--more-link-font-size: 24px;
+$parentheses-widget--tablet--post-info-font-size: 12px;
+
+
+
 
 
 //

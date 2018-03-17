@@ -3,4 +3,18 @@
 
 .nav-primary {
   background-color: $primary-nav--background-color;
+  @include grid-column(4);
+}
+
+.menu-primary {
+
+  .menu-item {
+    display: block;
+  }
+
+  a {
+    padding: 8px 12px;
+    text-align: center;
+  }
+
 }

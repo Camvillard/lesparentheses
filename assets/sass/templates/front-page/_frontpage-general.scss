@@ -1,9 +1,27 @@
 
 /* ----- front page : éléments communs ----- */
 
-
 body.custom-front-page {
 
-  border: $border--large-gris;
+    .site-inner {
+      max-width: 100%;
+      padding: 0;
+    }
 
+  .site-inner .wrap {
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+  }
+
+  .entry {
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+  article {
+    p {
+      @include rem( font-size, $frontpage-widget--content-font-size);
+    }
+  }
 }

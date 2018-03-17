@@ -37,9 +37,9 @@ return array(
 		),
 
 		array(
-			'id'          => 'frontpage-autres-histoires',
-			'name'        => __( 'encore plus d&lsquo;histoires', 'ktc' ),
-			'description' => __( 'zone de widget pour afficher quelques autres articles', 'lesparentheses' ),
+			'id'          => 'frontpage-petites-parentheses',
+			'name'        => __( 'les petites parenthèses', 'ktc' ),
+			'description' => __( 'zone de widget pour afficher les petites parenthèses et histoires', 'lesparentheses' ),
 		),
 
 	),

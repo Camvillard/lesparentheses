@@ -19,8 +19,11 @@ namespace lesparentheses\Structure;
  */
 function unregister_post_events() {
 	//remove_action( 'genesis_after_endwhile', 'genesis_posts_nav' );
-	//remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
+	remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
 }
+
+//displays the meta before the featured image
+add_action( 'genesis_entry_header', 'genesis_post_info', 11 );
 
 //  displays the featured image
 add_action( 'genesis_entry_header', __NAMESPACE__ . '\featured_post_image', 12 );

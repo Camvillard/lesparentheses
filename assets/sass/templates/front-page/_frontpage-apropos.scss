@@ -1,0 +1,46 @@
+/* ----- front page : à propos ----- */
+
+
+.frontpage-apropos {
+
+  .widget .widget-wrap  {
+    background: $taupe-clair;
+    @include grid-column(12);
+
+    position: relative;
+    margin: 60px auto;
+    padding: 20px 30px;
+
+      @media only screen and (min-width: $screen-size--regular){
+        @include grid-column(10);
+        float: right;
+
+        .widget-title {
+          color: $vieux-rose;
+          @include rem( font-size, $about-widget--title-font-size );
+          text-transform: uppercase;
+          transform: rotate(-90deg);
+          position: absolute;
+          left: -60px;
+          top: 80px;
+        }
+
+        .textwidget {
+          text-align: justify;
+          -moz-column-count: 2;
+          -moz-column-gap: 25px;
+          -webkit-column-count: 2;
+          -webkit-column-gap: 25px;
+          column-count: 2;
+          column-gap: 25px;
+          float: left;
+          max-width: 740px;
+          margin: auto;
+          clear: both;
+          padding: 20px 20px;
+
+        }
+      }
+  }
+
+}
