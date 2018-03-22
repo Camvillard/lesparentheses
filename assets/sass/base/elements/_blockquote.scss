@@ -1,13 +1,18 @@
 blockquote {
   margin: 40px;
+  font-style: italic;
+  color: $gris-moyen;
+  @include rem( font-size, $blockquote--font-size );
 
   &::before {
-    content: "\201C";
+    content: "\00ab";
     display: block;
-    @include rem( font-size, $blockquote--font-size );
+    @include rem( font-size, $blockquote--bullet-font-size );
+    font-weight: $font-weight--bold;
     height: 0;
-    left: -20px;
+    left: -50px;
     position: relative;
-    top: -10px;
+    top: -80px;
+    color: $mint-clair;
   }
 }

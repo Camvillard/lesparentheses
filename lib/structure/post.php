@@ -20,6 +20,7 @@ namespace lesparentheses\Structure;
 function unregister_post_events() {
 	//remove_action( 'genesis_after_endwhile', 'genesis_posts_nav' );
 	remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
+		remove_action( 'genesis_entry_content', 'genesis_do_post_image', 8 );
 }
 
 //displays the meta before the featured image

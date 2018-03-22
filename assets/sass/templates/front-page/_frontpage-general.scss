@@ -1,26 +1,37 @@
 
 /* ----- front page : éléments communs ----- */
 
+
 body.custom-front-page {
+  .site-inner {
+    max-width: $max-width--fullwidth;
+    margin: auto;
+    padding: 0;
+    border: $border--fine-gris;
+  }
+  .wrap {
+   max-width: $max-width--fullwidth;
+   width: 100%;
+   padding: 0;
+   margin: auto;
+ }
+  .widget p{
+    @include rem( font-size, $frontpage-widget--mobile--content-font-size);
+  }
+}
 
-    .site-inner {
-      max-width: 100%;
-      padding: 0;
+
+@media only screen and (min-width : $screen-size--medium) {
+  body.custom-front-page  {
+    .widget p{
+      @include rem( font-size, $frontpage-widget--tablet--content-font-size);
     }
-
-  .site-inner .wrap {
-    max-width: 100%;
-    width: 100%;
-    padding: 0;
   }
+}
 
-  .entry {
-    padding: 0;
-    margin-bottom: 0;
-  }
-
-  article {
-    p {
+@media only screen and (min-width : $screen-size--large) {
+  body.custom-front-page  {
+    .widget p{
       @include rem( font-size, $frontpage-widget--content-font-size);
     }
   }

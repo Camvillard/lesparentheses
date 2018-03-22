@@ -1,0 +1,70 @@
+/* ----- entry content : navigation ----- */
+
+.single-entry-pagination {
+  text-align: center;
+  clear: both;
+  margin-bottom: 30px;
+
+  a {
+    @include rem( font-size, $entry-content--mobile--navigation-font-size);
+    text-decoration: none;
+    color: $taupe-clair;
+    font-weight: $font-weight--extra-bold;
+    &:hover,
+    &:focus {
+      background: $vieux-rose;
+      color: $white;
+    }
+  }
+
+  .article-pre,
+  .article-suiv {
+    display: inline;
+    margin: 8px 14px;
+  }
+
+  .article-pre a{
+    padding: 10px 20px 8px 6px;
+  }
+
+  .article-suiv a{
+    padding: 10px 6px 8px 20px;
+  }
+
+}
+
+
+@media only screen and (min-width: $screen-size--regular) {
+
+  .single-entry-pagination {
+
+    a {
+      @include rem( font-size, $entry-content--navigation-font-size);
+    }
+
+    .article-pre {
+      position: fixed;
+      left: 20px;
+      top: 50vh;
+      a {
+        padding: 8px 36px 6px 4px;
+      }
+    }
+
+    .article-suiv {
+      position: fixed;
+      right: 20px;
+      top: 50vh;
+      a {
+        padding: 8px 4px 6px 36px;
+      }
+    }
+
+
+
+  }
+
+
+
+
+}

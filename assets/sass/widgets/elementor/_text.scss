@@ -1,0 +1,6 @@
+/* ----- elementor : text ----- */
+
+.elementor-text-editor {
+  @include rem( font-size, $base--font-size);
+  font-family: $font-family--roboto;
+}

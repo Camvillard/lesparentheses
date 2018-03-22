@@ -1,7 +1,10 @@
+/* ----- entry header : metas ----- */
+
 .entry-header {
   .entry-meta {
     margin-bottom: 24px;
-    //@include rem( font-size, $entry-header__entry-meta--font-size );
+    @include rem( font-size, $entry-header--entry-meta--font-size );
+    font-style: italic;
   }
 }
 

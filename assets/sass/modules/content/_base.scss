@@ -2,14 +2,14 @@
 // Main entry article
 //==============================
 
-.entry {
+.single .entry {
   max-width: $max-width--responsive;
   background-color: $entry--background-color;
   padding: 30px;
   margin-bottom: 5%;
 
   @media only screen and (min-width : $screen-size--medium) {
-    margin-bottom: 40px;
+    margin-bottom: 24px;
     padding: 70px 40px;
   }
 

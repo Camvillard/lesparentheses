@@ -1,0 +1,55 @@
+/* ----- entry content : elements ----- */
+
+.single .entry-content {
+
+  a {
+    text-decoration: none;
+    border-bottom: $border--fine-vieux-rose;
+    &:hover {
+      background: $vieux-rose;
+      color: $white;
+    }
+  }
+
+  ol, ul {
+    margin-bottom: 28px;
+    margin-left: 40px;
+  }
+
+  ol > li {
+    list-style-type: decimal;
+  }
+
+  ul > li {
+    list-style-type: disc;
+  }
+
+  ol ol,
+  ul ul {
+    margin-bottom: 0;
+  }
+
+  code {
+    background-color: $entry-content__code--background-color;
+    color: $entry-content__code--color;
+  }
+
+  // share & like section
+  .et_social_networks {
+    border-top: $border--fine-mint;
+    padding-top: 12px;
+    .et_social_icons_container {
+      width: 60%;
+      margin: 10px 20%;
+    }
+
+    a.et_social_share {
+      margin: 2px !important;
+      &:hover {
+        background: none;
+      }
+    }
+  }
+
+
+}

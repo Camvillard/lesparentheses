@@ -9,12 +9,17 @@ $neat-grid: (
 
 $frontpage-secondary-widgets-grid: (
   columns: 12,
-  gutter: 40px,
+  gutter: 32px,
 );
 
 $frontpage-inside-widgets-grid: (
+  columns: 3,
+  gutter: 2px,
+);
+
+$recipe-grid: (
   columns: 12,
-  gutter: 12px,
+  gutter: 18px,
 );
 
 .one-half,

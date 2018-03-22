@@ -6,7 +6,7 @@ html {
 body {
   background-color: $body--background-color;
   border: $border--huge-vieux-rose;
-  color: $base__color;
+  color: $base--color;
   font-family: $base--font-family;
   @include rem( font-size, $base--font-size );
   -webkit-font-smoothing: antialiased;
@@ -20,10 +20,10 @@ body {
 
   /* Chrome fix */
   > div {
-    font-size: $base__div--font-size;
+    font-size: $base--div--font-size;
 
      @media screen and (max-width: 640px) {
-      font-size: $base__div--font-size--small-screen;
+      font-size: $base--div--font-size--small-screen;
     }
   }
 }

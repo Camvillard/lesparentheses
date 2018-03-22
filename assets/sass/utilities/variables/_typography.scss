@@ -7,19 +7,20 @@ $font-family--josefin: 'Josefin Sans', sans-serif;
 $html--font-size: 62.5%;
 
 $base--font-family: $font-family--roboto;
-$base--font-size: 16px;
+$base--font-size: 18px;
 $base--font-size--small-screen: 16px;
-$base__div--font-size: 1.6rem;
-$base__div--font-size--small-screen: 1.8rem;
+$base--div--font-size: 1.8rem;
+$base--div--font-size--small-screen: 1.6rem;
 $base--line-height: 1.625;
 
 $font-weight--light: 300;
 $font-weight--normal: 400;
 $font-weight--bold: 700;
+$font-weight--extra-bold: 900;
 
 // Headings
 $headings--font-family: $font-family--josefin;
-$headings--line-height: 1.6;
+$headings--line-height: 1.4;
 $h1--font-size:  42px;
 $h2--font-size:  30px;
 $h3--font-size:  24px;
@@ -30,7 +31,8 @@ $h6--font-size:  16px;
 
 
 // Elements
-$blockquote--font-size: 30px;
+$blockquote--font-size: 22px;
+$blockquote--bullet-font-size: 146px;
 $input--font-size: 18px;
 $button--font-size: 16px;
 
@@ -58,13 +60,23 @@ $footer-widgets--font-size: 18px;
 //
 // Entry Content
 //===================
-$entry-meta--font-size: 16px;
-$entry-header__entry-meta--font-size: 16px;
-$entry-footer__entry-meta--font-size: 16px;
+$entry-meta--font-size: 18px;
+$entry-header--entry-meta--font-size: 18px;
+$entry-footer--entry-meta--font-size: 18px;
 
-$entry-title--font-size: 48px;
+$entry-title--font-size: 72px;
 $entry-title--mobile--font-size: 36px;
 $entry-title--tablet--font-size: 36px;
+
+$entry-content--h1-font-size: 54px;
+$entry-content--h2-font-size: 50px;
+$entry-content--h3-font-size: 40px;
+$entry-content--h4-font-size: 34px;
+$entry-content--h5-font-size: 30px;
+$entry-content--h6-font-size: 24px;
+
+$entry-content--navigation-font-size: 92px;
+$entry-content--mobile--navigation-font-size: 42px;
 
 //
 // Comments
@@ -85,37 +97,37 @@ $frontpage-widget--tablet--content-font-size: 18px;
 
 //regular
 $principal-widget--title-font-size: 36px;
-$principal-widget--article-title-font-size: 78px;
+$principal-widget--article-title-font-size: 82px;
 $principal-widget--more-link-font-size: 78px;
 $principal-widget--post-info-font-size: 22px;
 
 //mobile
-$principal-widget--mobile--title-font-size: 36px;
-$principal-widget--mobile--article-title-font-size: 78px;
-$principal-widget--mobile--more-link-font-size: 78px;
-$principal-widget--mobile--post-info-font-size: 22px;
+$principal-widget--mobile--title-font-size: 22px;
+$principal-widget--mobile--article-title-font-size: 54px;
+$principal-widget--mobile--more-link-font-size: 70px;
+$principal-widget--mobile--post-info-font-size: 18px;
 
 //tablet
-$principal-widget--tablet--title-font-size: 36px;
-$principal-widget--tablet--article-title-font-size: 78px;
-$principal-widget--tablet--more-link-font-size: 78px;
-$principal-widget--tablet--post-info-font-size: 22px;
+$principal-widget--tablet--title-font-size: 26px;
+$principal-widget--tablet--article-title-font-size: 62px;
+$principal-widget--tablet--more-link-font-size: 72px;
+$principal-widget--tablet--post-info-font-size: 20px;
 
 
 // regular
 $secondary-widget--title-font-size: 36px;
 $secondary-widget--article-title-font-size: 42px;
-$secondary-widget--more-link-font-size: 32px;
+$secondary-widget--more-link-font-size: 52px;
 $secondary-widget--post-info-font-size: 16px;
 
 //mobile
-$secondary-widget--mobile--title-font-size: 36px;
+$secondary-widget--mobile--title-font-size: 18px;
 $secondary-widget--mobile--article-title-font-size: 42px;
 $secondary-widget--mobile--more-link-font-size: 32px;
 $secondary-widget--mobile--post-info-font-size: 16px;
 
 //tablet
-$secondary-widget--tablet--title-font-size: 36px;
+$secondary-widget--tablet--title-font-size: 22px;
 $secondary-widget--tablet--article-title-font-size: 42px;
 $secondary-widget--tablet--more-link-font-size: 32px;
 $secondary-widget--tablet--post-info-font-size: 16px;
@@ -166,6 +178,21 @@ $parentheses-widget--tablet--more-link-font-size: 24px;
 $parentheses-widget--tablet--post-info-font-size: 12px;
 
 
+//
+// recettes
+//===================
+$recipe-widget--recipe-title-font-size: 4.6em;
+$recipe-widget--recipe-sumary-font-size: 16px;
+
+$recipe-widget--ingredients-title-font-size: 4.2em;
+$recipe-widget--ingredients-content-font-size: 0.8em;
+
+$recipe-widget--instructions-title-font-size: 4.2em;
+$recipe-widget--instructions-subtitle-font-size: 1.2em;
+$recipe-widget--instructions-content-font-size: 1em;
+
+$recipe-widget--notes-title-font-size: 1.8em;
+$recipe-widget--notes-content-font-size: 0.8em;
 
 
 

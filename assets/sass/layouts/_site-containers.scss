@@ -1,34 +1,32 @@
 /* ## Site Containers
 --------------------------------------------- */
 
-
 .wrap {
   margin: 0 auto;
   max-width: $max-width--fullwidth;
   padding-left: 5%;
   padding-right: 5%;
-
-  @media screen and (min-width: $screen-size--medium) {
-    padding-left: 2%;
-    padding-right: 2%;
-  }
-
 }
 
 .site-inner {
   margin: 90px auto;
-  max-width: $max-width--responsive;
+  max-width: $max-width--fullwidth;
   clear: both;
   padding-top: 40px;
   word-wrap: break-word;
   padding: 5% 5% 0;
-
-   @media screen and (min-width: $screen-size--medium) {
-    padding: 2% 2% 0;
   }
-}
-
 
 .landing-page .site-inner {
   max-width: $max-width__landing-page;
+}
+
+@media only screen and (min-width: $screen-size--medium) {
+  .site-inner {
+    padding: 2% 2% 0;
+  }
+  .wrap {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
 }

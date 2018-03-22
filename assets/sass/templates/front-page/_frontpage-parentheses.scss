@@ -1,110 +1,6 @@
 
 /* ----- front page : les petites parenthèses ----- */
 
-//mobile
-/*
-.frontpage-petites-parentheses {
-
-    max-width: $max-width--responsive;
-    margin: auto;
-    position: relative;
-
-  .widget-title {
-    text-transform: uppercase;
-    text-align: center;
-    @include rem( font-size, $parentheses-widget--mobile--title-font-size);
-    color: $gris-argent;
-  }
-
-
-  article {
-    background: $vieux-rose;
-
-    .entry-title {
-      border-bottom: $border--large-bleu;
-      text-align: center;
-        a {
-          @include rem( font-size, $parentheses-widget--mobile--article-title-font-size);
-          text-transform: uppercase;
-          color: $bleu-gris;
-        }
-      }
-
-      .post-info {
-        font-style: italic;
-        margin-bottom: 12px;
-      }
-
-      a.more-link {
-        margin: 12px auto 18px;
-        display: block;
-        padding: 6px;
-        text-transform: uppercase;
-        text-align: right;
-        text-decoration: none;
-        clear: both;
-      }
-    }
-
-}
-
-@media only screen and (min-width: $screen-size--regular) {
-
-  .frontpage-petites-parentheses {
-
-    .widget-title {
-      @include rem( font-size, $parentheses-widget--tablet--title-font-size);
-    }
-
-    article {
-      @include grid-column(4, $frontpage-secondary-widgets-grid);
-      position: relative;
-
-      .entry-title {
-        text-align: left;
-        a {
-          @include rem( font-size, $parentheses-widget--tablet--article-title-font-size);
-        }
-      }
-
-      .post-info {
-        &:after {
-          content: "_";
-          display: block;
-          color: $bleu-gris;
-        }
-      }
-
-      a.more-link {
-        width: 100%;
-        margin: 12px auto 18px;
-        display: block;
-        padding: 6px;
-        border: $border--fine-vieux-rose;
-        text-align: center;
-      }
-    }
-  }
-}
-
-@media only screen and (min-width: $screen-size--large) {
-
-  .frontpage-petites-parentheses {
-
-    .widget-title {
-      @include rem( font-size, $parentheses-widget--title-font-size);
-    }
-
-    article {
-      .entry-title {
-        a {
-          @include rem( font-size, $parentheses-widget--article-title-font-size);
-        }
-      }
-    }
-  }
-}
-*/
 
 .frontpage-petites-parentheses {
 
@@ -115,6 +11,7 @@
     .widget_custom_html {
       width: 70%;
       margin: 20px auto 60px;
+
       .widget-title {
         text-transform: uppercase;
         text-align: center;
@@ -141,10 +38,11 @@
       margin-bottom: 20px;
 
       .entry-header {
-        @include grid-column(5, $frontpage-inside-widgets-grid);
+        @include grid-column(1, $frontpage-inside-widgets-grid);
+
         .entry-title {
           text-align: right;
-          padding-right: 8px;
+
             a {
               @include rem( font-size, $parentheses-widget--mobile--article-title-font-size);
               text-transform: uppercase;
@@ -160,13 +58,13 @@
       }
 
       .entry-content {
-        @include grid-column(7, $frontpage-inside-widgets-grid);
+        @include grid-column(2, $frontpage-inside-widgets-grid);
         float: right;
+
         p {
           border-left: $border--fine-bleu;
           padding-left: 8px;
         }
-
       }
 
       a.more-link {
@@ -184,11 +82,17 @@
 
 }
 
-@media only screen and (min-width: $screen-size--regular)  {
-
+@media only screen and (min-width : $screen-size--medium) {
+  margin-bottom: 10px;
+  padding: 10px;
 }
 
-@media only screen and (min-width: $screen-size--large) {
+@media only screen and (min-width : $screen-size--large) {
+  margin-bottom: 20px;
+  padding: 12px;
+}
 
+@media only screen and (min-width : $screen-size--huge) {
+  padding: 18px;
 }
 }
