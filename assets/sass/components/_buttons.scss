@@ -1,2 +1,55 @@
 /* ## Buttons
 --------------------------------------------- */
+
+.bouton-rose {
+  background: $vieux-rose;
+  border: $border--fine-vieux-rose;
+  padding: 12px;
+  font-family: $font-family--josefin;
+    a {
+      color: $white;
+      &:hover,
+      &:focus {
+        color: $vieux-rose;
+      }
+    }
+}
+
+.bouton-gris-argent {
+  background: $gris-argent;
+  border: $border--fine-gris;
+  padding: 12px;
+  font-family: $font-family--josefin;
+    a {
+      color: $white;
+      &:hover,
+      &:focus {
+        color: $gris-argent;
+      }
+    }
+}
+
+.bouton-bleu {
+  background: $bleu-gris;
+  border: $border--fine-bleu;
+  padding: 12px;
+  font-family: $font-family--josefin;
+    a {
+      color: $white;
+      &:hover,
+      &:focus {
+        color: $bleu-gris;
+      }
+    }
+}
+
+.bouton-simple-bleu {
+  font-family: $font-family--josefin;
+    a {
+      color: $bleu-gris;
+      &:hover,
+      &:focus {
+        border-bottom: $border--moyenne-bleu;
+      }
+    }
+}

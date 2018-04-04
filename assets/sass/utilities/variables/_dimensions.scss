@@ -2,7 +2,7 @@
 // Dimensions Variables
 //=======================
 
-$base--width: 1280;
+$base--width: 1200;
 $gutter: 40px;
 
 //
@@ -10,12 +10,15 @@ $gutter: 40px;
 //==========================
 
 $screen-size--smallest: 320px;
+// grille de 4
 $screen-size--small: 480px;
+// grille de 8
 $screen-size--medium: 860px;
+// grille de 12
 $screen-size--regular: 1024px;
 $screen-size--large: 1200px;
 $screen-size--big: 1340px;
-$screen-size--huge: 1600px;
+$screen-size--huge: 1440px;
 
 
 //
@@ -30,7 +33,7 @@ $max-width--medium-screen: 780px;
 $max-width__landing-page: 800px;
 $max-width--fullwidth: 100vw;
 
-$max-width--responsive: 88vw;
+$max-width--responsive: 82vw;
 
 //
 // Content Widths

@@ -24,6 +24,25 @@ function unregister_footer_events() {
 // Add schema markup to Footer Navigation Menu.
 add_filter( 'genesis_attr_nav-footer', 'genesis_attributes_nav' );
 
+add_action( 'genesis_footer', __NAMESPACE__ . '\render_footer_widgets', 8 );
+/**
+ * Renders out the pre-footer.
+ *
+ * @since 1.0.0
+ *
+ * @return void
+ */
+function render_footer_widgets() {
+ genesis_widget_area( 'search-footer', array(
+	 'before' => '<div class="search-footer"><div class="wrap">',
+	 'after'  => '</div></div>',
+ ) );
+ genesis_widget_area( 'fullwidth-footer', array(
+  'before' => '<div class="fullwidth-footer"><div class="wrap">',
+  'after'  => '</div></div>',
+ ) );
+}
+
 // Display Footer Navigation Menu above footer content
 add_action( 'genesis_footer', __NAMESPACE__ . '\do_footernav' );
 /**

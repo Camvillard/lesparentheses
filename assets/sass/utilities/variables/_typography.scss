@@ -7,11 +7,11 @@ $font-family--josefin: 'Josefin Sans', sans-serif;
 $html--font-size: 62.5%;
 
 $base--font-family: $font-family--roboto;
-$base--font-size: 18px;
-$base--font-size--small-screen: 16px;
-$base--div--font-size: 1.8rem;
-$base--div--font-size--small-screen: 1.6rem;
-$base--line-height: 1.625;
+$base--font-size: 16px;
+$base--font-size--small-screen: 14px;
+$base--div--font-size: 1.6rem;
+$base--div--font-size--small-screen: 1.4rem;
+$base--line-height: 1.4;
 
 $font-weight--light: 300;
 $font-weight--normal: 400;
@@ -90,9 +90,9 @@ $widget-title--font-size: 18px;
 $featured-content__entry-title--font-size: 20px;
 $frontpage-widget-postinfo--font-family: $font-family--josefin;
 
-$frontpage-widget--content-font-size: 18px;
 $frontpage-widget--mobile--content-font-size: 18px;
-$frontpage-widget--tablet--content-font-size: 18px;
+$frontpage-widget--tablet--content-font-size: 20px;
+$frontpage-widget--content-font-size: 22px;
 
 
 //regular
@@ -123,8 +123,8 @@ $secondary-widget--post-info-font-size: 16px;
 //mobile
 $secondary-widget--mobile--title-font-size: 18px;
 $secondary-widget--mobile--article-title-font-size: 42px;
-$secondary-widget--mobile--more-link-font-size: 32px;
-$secondary-widget--mobile--post-info-font-size: 16px;
+$secondary-widget--mobile--more-link-font-size: 24px;
+$secondary-widget--mobile--post-info-font-size: 18px;
 
 //tablet
 $secondary-widget--tablet--title-font-size: 22px;
@@ -132,27 +132,27 @@ $secondary-widget--tablet--article-title-font-size: 42px;
 $secondary-widget--tablet--more-link-font-size: 32px;
 $secondary-widget--tablet--post-info-font-size: 16px;
 
-
+// about widget
 //regular
 $about-widget--title-font-size: 36px;
 $about-widget--about-title-font-size: 42px;
-$about-widget--article-font-size: 42px;
+$about-widget--article-font-size: 32px;
 $about-widget--more-link-font-size: 32px;
 $about-widget--post-info-font-size: 16px;
 
 //mobile
 $about-widget--mobile--title-font-size: 36px;
 $about-widget--mobile--about-title-font-size: 42px;
-$about-widget--mobile--article-font-size: 42px;
-$about-widget--mobile--more-link-font-size: 32px;
+$about-widget--mobile--article-font-size: 20px;
+$about-widget--mobile--more-link-font-size: 22px;
 $about-widget--mobile--post-info-font-size: 16px;
 
 //tablet
 $about-widget--tablet--title-font-size: 36px;
 $about-widget--tablet--about-title-font-size: 42px;
-$about-widget--tablet--article-font-size: 42px;
+$about-widget--tablet--article-font-size: 24px;
 $about-widget--tablet--more-link-font-size: 32px;
-$about-widget--tablet--post-info-font-size: 16px;
+$about-widget--tablet--post-info-font-size: 22px;
 
 
 //regular
@@ -167,7 +167,7 @@ $parentheses-widget--post-info-font-size: 16px;
 $parentheses-widget--mobile--title-font-size: 24px;
 $parentheses-widget--mobile--article-title-font-size: 30px;
 $parentheses-widget--mobile--article-excerpt-font-size: 16px;
-$parentheses-widget--mobile--more-link-font-size: 28px;
+$parentheses-widget--mobile--more-link-font-size: 48px;
 $parentheses-widget--mobile--post-info-font-size: 14px;
 
 //tablet (85%)
@@ -195,6 +195,56 @@ $recipe-widget--notes-title-font-size: 1.8em;
 $recipe-widget--notes-content-font-size: 0.8em;
 
 
+//
+// petites parentheses
+//===================
+$parentheses--mobile--title-font-size: 16px;
+$parentheses--tablet--title-font-size: 92px;
+$parentheses--desktop--title-font-size: 124px;
+
+//
+// archives : blog page
+//===================
+$archive-blog--mobile--title-font-size: 16px;
+$archive-blog--tablet--title-font-size: 92px;
+$archive-blog--desktop--title-font-size: 124px;
+
+$archive-blog--mobile--pp-title-font-size: 80px;
+$archive-blog--tablet--pp-title-font-size: 112px;
+$archive-blog--desktop--pp-title-font-size: 144px;
+
+$archive-blog--mobile--more-link-font-size: 16px;
+$archive-blog--tablet--more-link-font-size: 92px;
+$archive-blog--desktop--more-link-font-size: 124px;
+
+$archive-blog--mobile--post-info-font-size: 16px;
+$archive-blog--tablet--post-info-font-size: 92px;
+$archive-blog--desktop--post-info-font-size: 124px;
+
+$archive-blog--mobile--meta-font-size: 16px;
+$archive-blog--tablet--meta-font-size: 92px;
+$archive-blog--desktop--meta-font-size: 124px;
+
+//
+// template : soutien
+//===================
+$template-soutien--mobile--title-font-size: 66px;
+$template-soutien--tablet--title-font-size: 82px;
+$template-soutien--desktop--title-font-size: 94px;
+
+$template-soutien--mobile--content-font-size: 16px;
+$template-soutien--tablet--content-font-size: 18px;
+$template-soutien--desktop--content-font-size: 20px;
+
+$template-soutien--mobile--btn-font-size: 46px;
+$template-soutien--tablet--btn-font-size: 92px;
+$template-soutien--desktop--btn-font-size: 124px;
+
+//
+// search widget
+//===================
+$search-widget--input-font-size: 18px;
+$search-widget--mobile--input-font-size: 18px;
 
 //
 // Plugins
@@ -208,5 +258,6 @@ $breadcrumbs--font-size: 16px;
 $author-box--font-size: 18px;
 $author-box__Title--font-size: 20px;
 $after-entry--font-size: 18px;
+
 $archive-description--font-size: 18px;
 $archive-title--font-size: 20px;

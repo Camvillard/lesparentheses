@@ -20,3 +20,26 @@ namespace lesparentheses\Structure;
 function unregister_archive_events() {
 	// nothing to unregister.
 }
+
+// change les infos
+add_filter( 'genesis_post_info', __NAMESPACE__ . '\custom_post_info');
+function custom_post_info($info_des_articles) {
+  $info_des_articles = '[post_date label="histoire publiée le&nbsp;"]';
+  return $info_des_articles;
+}
+
+// change les metas
+add_filter( 'genesis_post_meta', __NAMESPACE__ . '\custom_post_meta');
+function custom_post_meta($metas_des_articles) {
+  $metas_des_articles = '[post_categories before="catégorie(s)&nbsp;// " sep="&nbsp;/"][post_tags before="étiquette(s)&nbsp;// " sep="&nbsp;/"][post_comments zero="il n&apos;a pas encore de commentaire ; c&apos;est dommage" one="il y a déjà un commentaire, vous avez le droit de copier" more="Il y a déjà % commentaires"]';
+  return $metas_des_articles;
+}
+
+//ajoute un artucle au hasard sur le côté
+//add_action('genesis_before_entry', __NAMESPACE__ . '\random_blog_post');
+function random_blog_post() {
+  // if (is_page_template('archive.php')) {
+      echo '<div class="hasard"><a href="https://les-parentheses.com/?random=1">un article au hasard</a></div>';
+  // }
+
+}

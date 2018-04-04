@@ -1,0 +1,14 @@
+/* ----- feed instagram ----- */
+
+.fullwidth-footer {
+  margin: 24px auto 34px;
+  .widget {
+    margin: auto;
+    width: 100%;
+  }
+  #sb_instagram .sbi_follow_btn a{
+    border-radius: 0px !important;
+    font-family: $font-family--josefin;
+    font-weight: $font-weight--bold;
+  }
+}

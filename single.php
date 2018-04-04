@@ -7,18 +7,19 @@
  * @since       1.0.0
  * @author      camille villard
  * @link        https://camillevillard.io
- * @license     GNU General Public License 2.0+
+ * @license     Creative Commons
  */
 
- namespace lesparentheses;
+ namespace lesparentheses\single;
 
 
 // change les metas
 add_filter( 'genesis_post_info', __NAMESPACE__ . '\custom_post_info');
 function custom_post_info($info_des_articles) {
-		$info_des_articles = '[post_date label="histoire publiée le "]';
-		return $info_des_articles;
-	}
+  $info_des_articles = '[post_date label="histoire publiée le&nbsp;"]';
+  return $info_des_articles;
+}
+
 
 
 // Add post navigation (requires HTML5 theme support)

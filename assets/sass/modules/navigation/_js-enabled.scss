@@ -5,6 +5,9 @@
 @media only screen and (max-width: 1023px) {
 
   .js {
+    .nav-primary {
+      display: none;
+    }
     .genesis-nav-menu {
       .sub-menu, .sub-menu a {
         width: 100%;

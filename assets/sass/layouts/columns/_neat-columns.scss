@@ -7,20 +7,40 @@ $neat-grid: (
   gutter: 22px,
 );
 
-$frontpage-secondary-widgets-grid: (
+// au dessus de 860 px
+$principal-grid: (
   columns: 12,
-  gutter: 32px,
+  gutter: 24px,
 );
+
+// entre 480 et 860 px
+$principal--tablet-grid: (
+  columns: 8,
+  gutter: 16px,
+);
+
+// moins de 480 px
+$principal--mobile-grid: (
+  columns: 4,
+  gutter: 16px,
+);
+
+
+// $frontpage-secondary--mobile-widgets-grid: (
+//   columns: 8,
+//   gutter: 24px,
+// );
 
 $frontpage-inside-widgets-grid: (
-  columns: 3,
-  gutter: 2px,
+  columns: 6,
+  gutter: 22px,
 );
 
-$recipe-grid: (
-  columns: 12,
-  gutter: 18px,
+$frontpage-inside-widgets--mobile-grid: (
+  columns: 3,
+  gutter: 12px,
 );
+
 
 .one-half,
 .three-sixths,

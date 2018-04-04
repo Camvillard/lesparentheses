@@ -2,37 +2,33 @@
 /* ----- front page : éléments communs ----- */
 
 
-body.custom-front-page {
+.custom-front-page {
   .site-inner {
     max-width: $max-width--fullwidth;
     margin: auto;
-    padding: 0;
-    border: $border--fine-gris;
+    padding: 0px;
+    //border: $border--fine-gris;
   }
   .wrap {
    max-width: $max-width--fullwidth;
    width: 100%;
-   padding: 0;
-   margin: auto;
+   padding: 0px;
+   //margin: auto;
  }
   .widget p{
-    @include rem( font-size, $frontpage-widget--mobile--content-font-size);
+  @include rem( font-size, $frontpage-widget--mobile--content-font-size);
   }
-}
 
-
-@media only screen and (min-width : $screen-size--medium) {
-  body.custom-front-page  {
+  @media only screen and (min-width : $screen-size--medium) {
     .widget p{
-      @include rem( font-size, $frontpage-widget--tablet--content-font-size);
+    @include rem( font-size, $frontpage-widget--tablet--content-font-size);
     }
   }
-}
 
-@media only screen and (min-width : $screen-size--large) {
-  body.custom-front-page  {
+  @media only screen and (min-width : $screen-size--regular) {
     .widget p{
-      @include rem( font-size, $frontpage-widget--content-font-size);
+    @include rem( font-size, $frontpage-widget--content-font-size);
     }
   }
+
 }

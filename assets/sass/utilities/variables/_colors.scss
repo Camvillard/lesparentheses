@@ -4,12 +4,13 @@ $white: #fff;
 $black: #000;
 
 $gris-clair: #bcc3c9;
-$gris-moyen: #555a60;
+$gris-moyen: #686f75;
 
 $mint-clair: #e8f9f1;
-$taupe-clair: #d1c8c7;
+$taupe-clair: #eae1e1;
+$taupe-fonce: #c6bdbd;
 $vieux-rose: #dba9a9;
-$bleu-gris: #393d45;
+$bleu-gris: #2b3038;
 $gris-argent: #99a7ad;
 
 
@@ -22,7 +23,7 @@ $link--hover-color: $gris-argent;
 $link--hover-background-color: $vieux-rose;
 
 // Elements
-$base--color: $bleu-gris;
+$base--color: $gris-moyen;
 $body--background-color: $white;
 
 // Form Elements
@@ -83,10 +84,13 @@ $footer-widgets--background-color: $white;
 //===================
 $entry-footer__meta--border-color: $gris-clair;
 $entry--background-color: $white;
-$entry-title--link-color: $gris-argent;
+$entry-title--link-color: $bleu-gris;
 $entry-title--hover-color: $vieux-rose;
 $entry-content__code--background-color: $gris-clair;
 $entry-content__code--color: $gris-argent;
+
+
+$entry-title--color: $bleu-gris;
 
 //
 // Comments
@@ -98,6 +102,14 @@ $comment--background-color: $white;
 //===================
 $widget-title--link-color: $gris-argent;
 $principal-widget--more-link-color: $bleu-gris;
+
+//
+// Search widget
+//===================
+$search-widget--input-background-color: $taupe-fonce;
+$search-widget--focus-background-color: $white;
+$search-widget--input-color: $white;
+$search-widget--search-color: $bleu-gris;
 
 
 //

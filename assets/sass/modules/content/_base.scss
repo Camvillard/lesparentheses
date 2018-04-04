@@ -2,20 +2,18 @@
 // Main entry article
 //==============================
 
+
 .single .entry {
   max-width: $max-width--responsive;
-  background-color: $entry--background-color;
-  padding: 30px;
-  margin-bottom: 5%;
+  padding: 2vh 3vw;
+  margin: auto;
 
   @media only screen and (min-width : $screen-size--medium) {
-    margin-bottom: 24px;
-    padding: 70px 40px;
+    padding: 2vh 4vw;
   }
 
   @media only screen and (min-width : $screen-size--huge) {
-    max-width: $max-width--huge-screen;
-    margin: auto;
+    padding: 4vh 2vw;
   }
 
 }

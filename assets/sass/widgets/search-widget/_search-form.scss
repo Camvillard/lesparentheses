@@ -1,0 +1,36 @@
+/* ----- search form : page d'accueil ----- */
+
+.search-footer .widget_search {
+  .search-form {
+    padding: 10px 90px;
+  }
+
+  ::-moz-placeholder {
+    text-align: center;
+    text-transform: lowercase;
+    color: $search-widget--input-color;
+    opacity: 1;
+  }
+
+  ::-webkit-input-placeholder {
+    text-align: center;
+    text-transform: lowercase;
+    color: $search-widget--input-color;
+    opacity: 1;
+  }
+
+  input {
+    background-color: $search-widget--input-background-color;
+    border: none;
+    color: $search-widget--input-color;
+    @include rem( font-size, $search-widget--input-font-size );
+    padding: 16px;
+    width: 100%;
+  }
+
+  input[type="search"] {
+    text-align: center;
+    // background: $search-widget--focus-background-color;
+  }
+
+}

@@ -42,5 +42,17 @@ return array(
 			'description' => __( 'zone de widget pour afficher les petites parenthèses et histoires', 'lesparentheses' ),
 		),
 
+		array(
+			'id'          => 'search-footer',
+			'name'        => __( 'search-footer', 'ktc' ),
+			'description' => __( 'zone de widget  de recherche à camoufler dans certaines pages', 'lesparentheses' ),
+		),
+
+		array(
+			'id'          => 'fullwidth-footer',
+			'name'        => __( 'fullwidth footer', 'ktc' ),
+			'description' => __( 'zone de widget pleine largeur du footer', 'lesparentheses' ),
+		),
+
 	),
 );

@@ -5,9 +5,8 @@
 .entry-footer {
   .entry-meta {
     padding: 0px 0px 12px;
-    margin: 0px auto;
+    margin: 0px auto 14px;
     text-align: center;
-    border-bottom: $border--fine-mint;
     @include rem( font-size, $entry-footer--entry-meta--font-size );
   }
 

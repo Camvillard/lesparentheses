@@ -6,68 +6,120 @@
   .wrap {
     max-width: $max-width--fullwidth;
     width: 100%;
-    margin: auto;
-    background: $taupe-clair;
+    margin: 24px auto 56px;
+    padding: 0px !important;
+    background: $gris-argent;
+    //z-index: 10;
+  }
+  @media only screen and (min-width: $screen-size--regular) {
+  @include grid-column(10);
+  float: right;
   }
 
-  .widget-wrap {
+  #text-2 {
+    .widget-wrap {
     position: relative;
     margin: 20px auto;
     padding: 20px 40px;
-  }
-
-  h3.widget-title {
-    text-align: center;
-    text-transform: uppercase;
-    color: $white;
-    background: $bleu-gris;
-    @include rem( font-size, $about-widget--mobile--title-font-size );
-    width: 220px;
-  }
-  .bouton-frontpage {
-    float: right;
-    a {
-      text-align: center;
-      text-transform: uppercase;
-      color: $white;
-      background: $bleu-gris;
-      @include rem( font-size, $about-widget--mobile--title-font-size );
-      width: 220px;
     }
-  }
-}
-
-
-@media only screen and (min-width: $screen-size--regular) {
-
-  .frontpage-apropos {
-    @include grid-column(10);
-    float: right;
 
     .widget-title {
-      color: $vieux-rose;
-      @include rem( font-size, $about-widget--title-font-size );
-      text-transform: uppercase;
-      transform: rotate(-90deg);
+    position: relative;
+    text-align: center;
+    color: $bleu-gris;
+    //background: $bleu-gris;
+    @include rem( font-size, $about-widget--mobile--title-font-size );
+    //width: 220px;
+    z-index: 100 !important;
+      &:before {
       position: absolute;
-      left: -60px;
-      top: 80px;
+      content: "";
+      background: url(assets/images/blurb-bg-taupe-1.png) top left no-repeat;
+      background-size: 100%;
+      height: 115px;
+      width: 76px;
+      margin-left: 10px;
+      margin-top: -10px;
+      z-index: -1;
+      }
+    }
+    .textwidget p {
+        color: $white;
+        @include rem( font-size, $about-widget--mobile--article-font-size);
+        margin-bottom: 12px;
+        line-height: normal;
+    }
+    .bouton-frontpage {
+      float: right;
+      a {
+        text-align: center;
+        color: $white;
+        background: $bleu-gris;
+        @include rem( font-size, $about-widget--mobile--more-link-font-size );
+        //width: 220px;
+        font-family: $font-family--josefin;
+        padding: 8px ;
+      }
     }
 
-    .textwidget {
-      text-align: justify;
-      -moz-column-count: 2;
-      -moz-column-gap: 25px;
-      -webkit-column-count: 2;
-      -webkit-column-gap: 25px;
-      column-count: 2;
-      column-gap: 25px;
-      float: left;
-      max-width: 740px;
+    @media only screen and (min-width: $screen-size--medium) {
+      .widget-title {
+      @include rem( font-size, $about-widget--tablet--title-font-size );
+      margin-bottom: 40px !important;
+      }
+      .textwidget p {
+      @include rem( font-size, $about-widget--tablet--article-font-size);
+      }
+      .bouton-frontpage {
+      float: right;
+        a {
+        text-align: center;
+        color: $white;
+        background: $bleu-gris;
+        @include rem( font-size, $about-widget--tablet--more-link-font-size );
+        font-family: $font-family--josefin;
+        padding: 8px;
+        }
+      }
+    }
+
+    @media only screen and (min-width: $screen-size--regular) {
+      .widget-title {
+        color: $vieux-rose;
+        @include rem( font-size, $about-widget--title-font-size );
+        text-transform: uppercase;
+        transform: rotate(-90deg);
+        position: absolute;
+        left: -120px;
+        top: 120px;
+        &:before {
+          background: none;
+        }
+      }
+
+      .textwidget {
+        text-align: justify;
+        -moz-column-count: 2;
+        -moz-column-gap: 38px;
+        -webkit-column-count: 2;
+        -webkit-column-gap: 38px;
+        column-count: 2;
+        column-gap: 38px;
+        float: left;
+        //max-width: 740px;
+        margin: auto;
+        clear: both;
+        padding: 14px 40px;
+      }
+    }
+
+    @media only screen and (min-width: $screen-size--big) {
+      .textwidget {
+      width: 86%;
+      max-width: $max-width;
       margin: auto;
-      clear: both;
-      padding: 20px 20px;
-
+      }
     }
+
   }
 }

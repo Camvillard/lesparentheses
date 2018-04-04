@@ -2,133 +2,106 @@
 
 
 .frontpage-derniere-histoire {
-
   .wrap {
-    max-width: $max-width--responsive;
-    margin: auto;
-    position: relative;
-    padding: 10px 20px !important;
-    border: $border--large-bleu;
+  max-width: $max-width--responsive;
+  margin: 70px auto 20px;
+  position: relative;
+  // padding: 10px 44px !important;
+    // @media only screen and (min-width: $screen-size--medium) {
+    // padding: 10px 42px !important;
+    // }
+    @media only screen and (min-width: $screen-size--regular) {
+    margin: 90px auto 20px;
+    }
   }
-
 }
 
-.featured-content-la-derniere-histoire {
-
-  .widget-title {
+  .featured-content-la-derniere-histoire {
+    .widget-title {
     color: $gris-argent;
     @include rem( font-size, $principal-widget--mobile--title-font-size );
     text-transform: uppercase;
-    &:after {
+      &:after {
       content :"/";
+      }
     }
-  }
 
-  article {
+    article {
+      .entry-title a {
+      @include rem( font-size, $principal-widget--mobile--article-title-font-size );
+      text-transform: uppercase;
+      color: $bleu-gris;
+      }
 
-    a.more-link {
+      .post-info {
+      @include grid-column(12);
+      margin-left: 0px;
+      @include rem( font-size, $principal-widget--mobile--post-info-font-size );
+      font-family: $frontpage-widget-postinfo--font-family;
+      font-style: italic;
+      padding-left: 0px;
+      }
+
+      p {
+        @include grid-column(10);
+        @include grid-push(2);
+      }
+      a.more-link {
       @include rem( font-size, $principal-widget--mobile--more-link-font-size );
       float: right;
       color: $principal-widget--more-link-color;
       text-decoration: none;
       font-weight: $font-weight--bold;
+      }
     }
 
-    .entry-title a {
-      @include rem( font-size, $principal-widget--mobile--article-title-font-size );
-      text-transform: uppercase;
-      color: $bleu-gris;
-    }
-
-    .post-info {
-      @include rem( font-size, $principal-widget--mobile--post-info-font-size );
-      font-family: $frontpage-widget-postinfo--font-family;
-      font-style: italic;
-      padding-left: 0px;
-    }
-  }
-}
-
-@media only screen and (min-width: $screen-size--medium) {
-
-  .featured-content-la-derniere-histoire {
-
+  @media only screen and (min-width: $screen-size--medium) {
     .widget-title {
-      @include rem( font-size, $principal-widget--tablet--title-font-size );
+    @include rem( font-size, $principal-widget--tablet--title-font-size );
     }
-
     article {
-
       a.more-link {
-        @include rem( font-size, $principal-widget--tablet--more-link-font-size );
+      @include rem( font-size, $principal-widget--tablet--more-link-font-size );
       }
-
       .entry-title a {
-        @include rem( font-size, $principal-widget--tablet--article-title-font-size );
+      @include rem( font-size, $principal-widget--tablet--article-title-font-size );
       }
-
       .post-info {
-        @include rem( font-size, $principal-widget--tablet--post-info-font-size );
+      @include rem( font-size, $principal-widget--tablet--post-info-font-size );
       }
     }
   }
-}
 
-@media only screen and (min-width: $screen-size--regular) {
-
-  .frontpage-derniere-histoire {
-    .wrap {
-      max-width: $max-width--responsive;
-      margin: 40px auto;
-      position: relative;
-      padding: 0px;
-      border: $border--large-bleu;
-    }
-  }
-
-  .featured-content-la-derniere-histoire {
-
+  @media only screen and (min-width: $screen-size--regular) {
     .widget-title {
-      @include rem( font-size, $principal-widget--title-font-size );
-      transform: rotate(-90deg);
-      position: absolute;
-      left: -80px;
-      top: 355px;
+    @include rem( font-size, $principal-widget--title-font-size );
+    transform: rotate(-90deg);
+    position: absolute;
+    left: 0px;
+    top: 45%;
     }
 
     article {
-      @include grid-column(10);
-      float: right;
-
+    @include grid-column(10);
+    float: right;
       p {
-        padding-left: 30px;
+      padding-left: 30px;
       }
-
       a.more-link {
-          @include rem( font-size, $principal-widget--more-link-font-size );
-        }
-
-      .entry-title a {
-        @include rem( font-size, $principal-widget--article-title-font-size );
+      @include rem( font-size, $principal-widget--more-link-font-size );
       }
-
+      .entry-title a {
+      @include rem( font-size, $principal-widget--article-title-font-size );
+      }
       .post-info {
-        @include rem( font-size, $principal-widget--post-info-font-size );
+      @include rem( font-size, $principal-widget--post-info-font-size );
       }
     }
-
   }
-
-}
-
-
-
-
-
-
 
   @media only screen and (min-width: $screen-size--huge) {
-    .featured-content-la-derniere-histoire {
-      max-width: $max-width;
-    }
+  max-width: $max-width;
+  margin: auto;
+  }
+
   }

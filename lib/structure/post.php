@@ -18,16 +18,13 @@ namespace lesparentheses\Structure;
  * @return void
  */
 function unregister_post_events() {
-	//remove_action( 'genesis_after_endwhile', 'genesis_posts_nav' );
-	remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
-		remove_action( 'genesis_entry_content', 'genesis_do_post_image', 8 );
+	//remove the image of the post to display the featured image instead
+	remove_action( 'genesis_entry_content', 'genesis_do_post_image', 8 );
 }
 
-//displays the meta before the featured image
-add_action( 'genesis_entry_header', 'genesis_post_info', 11 );
 
 //  displays the featured image
-add_action( 'genesis_entry_header', __NAMESPACE__ . '\featured_post_image', 12 );
+add_action( 'genesis_entry_header', __NAMESPACE__ . '\featured_post_image', 13 );
 	function featured_post_image() {
 		the_post_thumbnail('principal-image');
 	}

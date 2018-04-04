@@ -1,0 +1,67 @@
+/* ----- entry content : les petites parentheses ----- */
+
+.single {
+  .category-petites-parentheses {
+    margin: auto;
+
+    .entry-header {
+    @include grid-column(1, $principal--mobile-grid);
+    text-align: center;
+    padding: 10px 12px;
+    }
+
+    .entry-footer {
+    @include grid-column(3, $principal--mobile-grid);
+    @include grid-push(1, $principal--mobile-grid);
+    }
+
+    .single-entry-pagination {
+    @include grid-column(3, $principal--mobile-grid);
+    @include grid-push(1, $principal--mobile-grid);
+    }
+
+    @media only screen and (min-width: $screen-size--medium) {
+      .entry-header {
+        @include grid-column(3, $principal-grid);
+        text-align: center;
+        position: sticky;
+        top: 40px;
+        border: $border--fine-bleu;
+        padding: 10px 12px;
+      }
+      .entry-content {
+      @include grid-column(9, $principal-grid);
+      }
+      .entry-footer {
+      @include grid-column(9, $principal-grid);
+      @include grid-push(3, $principal-grid);
+      }
+    }
+    @media only screen and (min-width: $screen-size--regular) {
+      .entry-header {
+      @include grid-column(4, $principal-grid);
+      text-align: center;
+      position: sticky;
+      top: 50px;
+      border: none;
+        .entry-title {
+        @include rem(font-size, $parentheses--desktop--title-font-size);
+        background: $bleu-gris;
+        color: $white;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        }
+        .entry-meta {
+        padding: 10px 14px;
+        }
+      }
+      .entry-content {
+      @include grid-column(8, $principal-grid);
+      }
+      .entry-footer {
+      @include grid-column(8, $principal-grid);
+      @include grid-push(4, $principal-grid);
+      }
+    }
+  }
+}

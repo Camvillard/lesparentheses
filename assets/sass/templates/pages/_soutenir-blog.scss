@@ -1,0 +1,209 @@
+/* ----- template spécial : page de soutien ----- */
+
+
+body.soutenir-blog{
+border: none;
+}
+.soutenir-blog {
+min-height: 100vh;
+background-color: $mint-clair;
+
+  //blurbs
+  .soutien-blurb-1 {
+  position: absolute;
+  content: "";
+  background: url(assets/images/soutien_bg-image_4.svg) no-repeat;
+  width: 143px;
+  height: 180px;
+  margin-left: 4vw;
+  margin-top: 0;
+  z-index: 4;
+  }
+  .soutien-blurb-2 {
+  position: absolute;
+  content: "";
+  background: url(assets/images/soutien_bg-image_1.svg) no-repeat;
+  width: 328px;
+  height: 313px;
+  margin-left: 60vw;
+  margin-top: 2vh;
+  z-index: 4;
+  }
+  .soutien-blurb-3 {
+  position: absolute;
+  content: "";
+  background: url(assets/images/soutien_bg-image_3.svg) no-repeat;
+  width: 161px;
+  height: 202px;
+  margin-left: 6vw;
+  margin-top: 45vh;
+  z-index: 4;
+  }
+
+
+  // contenu
+  .content {
+  border: $border--large-bleu;
+  background-color: $white;
+  padding: 12px 24px;
+  height: 62vh;
+  width: 60vw;
+  position: absolute;
+  top: 8vh;
+  left: 20vw;
+  padding: 18px 26px;
+  overflow: scroll;
+  z-index: 100;
+    .entry-title {
+    color: $entry-title--color;
+    text-align: center;
+    @include rem(font-size, $template-soutien--mobile--title-font-size);
+    }
+    .entry-content {
+    @include rem(font-size, $template-soutien--mobile--content-font-size);
+    }
+  }
+
+  // boutons de soutien & retour au blog
+  .footer-soutien {
+  position: absolute;
+  bottom: 4vh;
+  // right: 30vw;
+    .btn-soutenir,
+    .btn-retour-au-blog,
+    .btn-au-hasard {
+    text-align: center;
+    border: $border--moyenne-vieux-rose;
+    background: $vieux-rose;
+    }
+    a {
+    display: block;
+    color: $white;
+    font-family: $font-family--josefin;
+    padding: 8px 16px;
+    margin-bottom: 10px;
+      &:hover {
+      background: $white;
+      color: $vieux-rose;
+      }
+    }
+  }
+
+
+    @media only screen and (min-width: $screen-size--medium) {
+      //blurbs
+      .soutien-blurb-1 {
+      // position: absolute;
+      // content: "";
+      // background: url(assets/images/soutien_bg-image_4.svg) no-repeat top left;
+      width: 286px;
+      height: 361px;
+      margin-left: 4vw;
+      margin-top: 0;
+      // z-index: 4;
+      }
+      .soutien-blurb-2 {
+      // position: absolute;
+      // content: "";
+      // background: url(assets/images/soutien_bg-image_1.svg) no-repeat;
+      width: 328px;
+      height: 313px;
+      margin-left: 60vw;
+      margin-top: 2vh;
+      // z-index: 4;
+      }
+      .soutien-blurb-3 {
+      // position: absolute;
+      // content: "";
+      // background: url(assets/images/soutien_bg-image_3.svg) no-repeat top left;
+      width: 161px;
+      height: 202px;
+      margin-left: 6vw;
+      margin-top: 45vh;
+      // z-index: 4;
+      }
+
+    }
+
+  @media only screen and (min-width: $screen-size--large) {
+    //blurbs
+    .soutien-blurb-1 {
+    // position: absolute;
+    // content: "";
+    // background: url(assets/images/soutien_bg-image_4.svg) no-repeat top left;
+    width: 286px;
+    height: 361px;
+    margin-left: 4vw;
+    margin-top: 0;
+    // z-index: 4;
+    }
+    .soutien-blurb-2 {
+    // position: absolute;
+    // content: "";
+    // background: url(assets/images/soutien_bg-image_1.svg) no-repeat;
+    width: 328px;
+    height: 313px;
+    margin-left: 60vw;
+    margin-top: 2vh;
+    // z-index: 4;
+    }
+    .soutien-blurb-3 {
+    // position: absolute;
+    // content: "";
+    // background: url(assets/images/soutien_bg-image_3.svg) no-repeat top left;
+    width: 161px;
+    height: 202px;
+    margin-left: 6vw;
+    margin-top: 45vh;
+    // z-index: 4;
+    }
+
+    // contenu
+    .content {
+    height: 74vh;
+    width: 38vw;
+    position: absolute;
+    top: 13vh;
+    left: 14vw;
+    padding: 18px 26px;
+    overflow: scroll;
+    z-index: 100;
+      .entry-title {
+      @include rem(font-size, $template-soutien--desktop--title-font-size);
+      }
+      .entry-content {
+      @include rem(font-size, $template-soutien--desktop--content-font-size);
+      }
+    }
+
+    // boutons de soutien & retour au blog
+    .footer-soutien {
+    position: absolute;
+    bottom: 15vh;
+    right: 30vw;
+      .btn-soutenir,
+      .btn-retour-au-blog,
+      .btn-au-hasard {
+      text-align: center;
+      border: $border--moyenne-vieux-rose;
+      background: $vieux-rose;
+      }
+      a {
+      display: block;
+      color: $white;
+      font-family: $font-family--josefin;
+      padding: 8px 16px;
+      margin-bottom: 10px;
+        &:hover {
+        background: $white;
+        color: $vieux-rose;
+        }
+      }
+    }
+
+
+  }
+
+
+
+}

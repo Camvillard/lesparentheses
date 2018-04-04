@@ -83,10 +83,10 @@
 
     // en tete de la recette
     .wprm-recipe-name {
-      @include grid-column (8, $recipe-grid);
+      @include grid-column (8, $principal-grid);
       float: right;
       clear: both;
-      border: $border--large-bleu;
+      border: $border--moyenne-bleu;
     }
 
   	h2.wprm-recipe-name {
@@ -101,7 +101,7 @@
   	}
 
     .wprm-recipe-summary {
-      @include grid-column (8, $recipe-grid);
+      @include grid-column (8, $principal-grid);
       float: right;
       text-align: left;
       clear: both;
@@ -113,7 +113,7 @@
 
     // détails de la recette
     .wprm-recipe-details-container {
-      @include grid-column (8, $recipe-grid);
+      @include grid-column (8, $principal-grid);
       float: right;
       clear: both;
       margin-bottom: 15px;
@@ -150,13 +150,13 @@
         }
 
         .wprm-recipe-header {
-          @include grid-column (8, $recipe-grid);
+          @include grid-column (8, $principal-grid);
           float: right;
           margin-right: 0px !important;
         }
 
         .wprm-recipe-ingredient-group {
-          @include grid-column (4, $recipe-grid);
+          @include grid-column (4, $principal-grid);
           margin-bottom: 40px;
 
           ol,
@@ -189,7 +189,7 @@
         }
 
       .wprm-recipe-header {
-        @include grid-column (4, $recipe-grid);
+        @include grid-column (4, $principal-grid);
         float: left;
         clear: both;
       }
@@ -202,7 +202,7 @@
       }
 
       .wprm-recipe-instruction-group {
-        @include grid-column (8, $recipe-grid);
+        @include grid-column (8, $principal-grid);
         float: right;
       }
 
@@ -227,7 +227,7 @@
 
     // notes
     .wprm-recipe-notes-container {
-      @include grid-column (8, $recipe-grid);
+      @include grid-column (8, $principal-grid);
       float: right;
       clear: both;
       margin-top: 30px;

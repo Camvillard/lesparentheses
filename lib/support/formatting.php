@@ -22,10 +22,10 @@ add_filter( 'get_the_content_more_link', __NAMESPACE__ . '\modify_the_content_mo
  *
  * @return string
  */
-function modify_the_content_more_link( $html, $more_link_text ) {
-	$html = str_replace( '&#x02026; ', '<p>', $html );
-	$html = str_replace( '</a>', '</a></p>', $html );
-	$html = str_replace( $more_link_text, '+', $html );
+ function modify_the_content_more_link( $html, $more_link_text ) {
+ 	$html = str_replace( '&#x02026; ', '&lpar;&nbsp;&hellip;&nbsp;&rpar;</br>', $html );
+ 	// $html = str_replace( '</a>', '</a></p>', $html );
+ 	$html = str_replace( $more_link_text, '+', $html );
 
 	return $html;
 }
