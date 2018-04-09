@@ -33,7 +33,10 @@ $max-width--medium-screen: 780px;
 $max-width__landing-page: 800px;
 $max-width--fullwidth: 100vw;
 
-$max-width--responsive: 82vw;
+
+$max-width--responsive: 88vw;
+$width--responsive: 82vw;
+$width--fullwidth: 100vw;
 
 //
 // Content Widths
@@ -57,7 +60,7 @@ $content-sidebar-wrap--width-larger-screen: 920px;
 $content-sidebar-wrap--width-large-screen: 740px;
 
 // Header Module
-$title-area--width: 300px;
+$title-area--width: 400px;
 $site-title--min-height: 80px;
 $header-right--width: 800px;
 $header-right--width-large-screen: 620px;

@@ -3,7 +3,8 @@
 
 .frontpage-derniere-histoire {
   .wrap {
-  max-width: $max-width--responsive;
+  width: $width--responsive;
+  max-width: $max-width--fullwidth;
   margin: 70px auto 20px;
   position: relative;
   // padding: 10px 44px !important;
@@ -43,15 +44,31 @@
       }
 
       p {
-        @include grid-column(10);
-        @include grid-push(2);
+      @include grid-column(10);
+      @include grid-push(2);
       }
+
       a.more-link {
-      @include rem( font-size, $principal-widget--mobile--more-link-font-size );
       float: right;
+      padding-left: 18px;
+      padding-top: 2px;
+      @include rem( font-size, $principal-widget--mobile--more-link-font-size );
       color: $principal-widget--more-link-color;
       text-decoration: none;
       font-weight: $font-weight--bold;
+      &:hover {
+      color: $principal-widget--more-link-color-hover;  
+      }
+      &::before {
+        content: "";
+        background: url(assets/images/btn_more.svg) no-repeat;
+        width: 50px;
+        height: 46px;
+        position: absolute;
+        left: 4px;
+        top: 10px;
+        z-index: -1;
+      }
       }
     }
 
@@ -60,15 +77,26 @@
     @include rem( font-size, $principal-widget--tablet--title-font-size );
     }
     article {
-      a.more-link {
-      @include rem( font-size, $principal-widget--tablet--more-link-font-size );
-      }
       .entry-title a {
       @include rem( font-size, $principal-widget--tablet--article-title-font-size );
       }
       .post-info {
       @include rem( font-size, $principal-widget--tablet--post-info-font-size );
       }
+      a.more-link {
+      @include rem( font-size, $principal-widget--tablet--more-link-font-size );
+      &::before {
+        content: "";
+        background: url(assets/images/btn_more.svg) no-repeat;
+        width: 62px;
+        height: 57px;
+        position: absolute;
+        left: 4px;
+        top: 16px;
+        z-index: -1;
+      }
+      }
+
     }
   }
 
@@ -84,18 +112,29 @@
     article {
     @include grid-column(10);
     float: right;
-      p {
-      padding-left: 30px;
-      }
-      a.more-link {
-      @include rem( font-size, $principal-widget--more-link-font-size );
-      }
       .entry-title a {
       @include rem( font-size, $principal-widget--article-title-font-size );
       }
       .post-info {
       @include rem( font-size, $principal-widget--post-info-font-size );
       }
+      p {
+      padding-left: 30px;
+      }
+      a.more-link {
+      @include rem( font-size, $principal-widget--more-link-font-size );
+      &::before {
+        content: "";
+        background: url(assets/images/btn_more.svg) no-repeat;
+        width: 74px;
+        height: 67px;
+        position: absolute;
+        left: -2px;
+        top: 16px;
+        z-index: -1;
+      }
+      }
+
     }
   }
 

@@ -33,7 +33,7 @@ return array(
 		'genesis-responsive-viewport' => null,
     'custom-header'                   => array(
       'width'           => 600,
-      'height'          => 160,
+      'height'          => 150,
       'header-selector' => '.site-title a',
       'header-text'     => false,
       'flex-height'     => true,
@@ -63,7 +63,7 @@ return array(
 	//=============================================
 	'genesis_unregister_layout' => array(
 		'sidebar-content',
-    // 'content-sidebar',
+    'content-sidebar',
 		'content-sidebar-sidebar',
 		'sidebar-content-sidebar',
 		'sidebar-sidebar-content',

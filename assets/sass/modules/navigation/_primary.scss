@@ -3,10 +3,21 @@
 
 .nav-primary {
   background-color: $primary-nav--background-color;
-  @include grid-column(4);
+
+  @media only screen and (min-width: $screen-size--regular){
+  @include grid-column(2, $principal-grid);
+  @include grid-push(1, $principal-grid);
+  }
+
+  @media only screen and (min-width: $screen-size--large){
+  @include grid-column(2, $principal-grid);
+  @include grid-push(2, $principal-grid);
+  }
+
 }
 
 .menu-primary {
+  margin-top: 20px;
 
   .menu-item {
     display: block;
@@ -16,5 +27,12 @@
     padding: 8px 12px;
     text-align: center;
   }
+
+  @media only screen and (min-width: $screen-size--regular) {
+    .menu-plus-mobile {
+      display: none;
+    }
+  }
+
 
 }

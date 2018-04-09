@@ -72,6 +72,6 @@ function do_footernav() {
 //* Change the footer text
 add_filter('genesis_footer_creds_text', __NAMESPACE__ . '\footer_creds_filter');
 function footer_creds_filter( $creds ) {
-	$creds = '<a href="http://www.camillevillard.com">mentions legales</a> &middot; <a href="http://www.camillevillard.com">soutenir le blog</a></br>[footer_copyright after=" "] &middot; <p class="love">logo, petits dessins et site fabriqués avec <i class="icon ion-heart"></i> par <a href="http://www.camillevillard.com" target="_blank">camille villard</a></p>';
+	$creds = '&middot;[footer_copyright after=" les parenthèses"] &middot; </br><p class="love">identité visuelle, webdesign, petits dessins et ponctuation fabriqués avec <i class="icon ion-heart"></i> par <a href="http://www.camillevillard.com" target="_blank">camille villard</a></p>';
 	return $creds;
 }

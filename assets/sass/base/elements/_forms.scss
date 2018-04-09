@@ -6,7 +6,7 @@ select,
 textarea {
   background-color: $input--background-color;
   border: 1px solid $input--border-color;
-  color: $input--color;
+  // color: $input--color;
   @include rem( font-size, $input--font-size );
   font-weight: 400;
   padding: 16px;

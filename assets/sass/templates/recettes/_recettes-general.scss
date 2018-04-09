@@ -1,89 +1,85 @@
 /* ----- recettes : général ----- */
 
 
-  .rtl .wprm-recipe-simple {
+.rtl .wprm-recipe-simple {
+	.wprm-recipe-image-container {
+	float: left;
+	margin: 0 10px 10px 0;
+	}
+	ol,
+	ul {
+		li {
+		margin: 0 32px 0 0;
+		}
+	}
+}
 
-  	.wprm-recipe-image-container {
-  		float: left;
-  		margin: 0 10px 10px 0;
-  	}
+.wprm-recipe-simple {
+padding: 10px;
+margin: 20px 0;
+font-size: 0.9em;
 
-  	ol,
-  	ul {
-  		li {
-  			margin: 0 32px 0 0;
-  		}
-  	}
+	p, li {
+	font-size: 1em;
+	}
+
+	*:before, *:after {
+	display: none;
+	}
+
+  // titres des parties : généralités
+  h3.wprm-recipe-header {
+  font-family: $font-family--josefin !important;
+  text-transform: uppercase !important;
+  letter-spacing: normal;
+  color: $bleu-gris;
+  font-size: $recipe-widget--ingredients-title-font-size !important;
+  border: none !important;
   }
 
-  .wprm-recipe-simple {
-
-  	padding: 10px;
-  	margin: 20px 0;
-  	font-size: 0.9em;
-
-  	p, li {
-  		font-size: 1em;
-  	}
-
-  	*:before, *:after {
-  		display: none;
-  	}
-
-    // titres des parties : généralités
-    h3.wprm-recipe-header {
-      font-family: $font-family--josefin !important;
-      text-transform: uppercase !important;
-      letter-spacing: normal;
-      color: $bleu-gris;
-      font-size: $recipe-widget--ingredients-title-font-size !important;
-      border: none !important;
-    }
-
-    h4.wprm-recipe-group-name {
-      font-family: $font-family--josefin !important;
-      text-transform: uppercase !important;
-      letter-spacing: normal;
-      margin: 0;
-      padding: 0px !important;
-      color: $bleu-gris;
-    }
+  h4.wprm-recipe-group-name {
+  font-family: $font-family--josefin !important;
+  text-transform: uppercase !important;
+  letter-spacing: normal;
+  margin: 0;
+  padding: 0px !important;
+  color: $bleu-gris;
+  }
 
     //image & print
     .wprm-recipe-image-container {
-      width: 100%;
-      clear: both;
-      text-align: center;
-      margin: 0 0 10px 10px;
+    @include grid-column(8, $principal-grid);
+    float: right;
+    clear: both;
+    text-align: left;
+    margin: 0 0 10px 10px;
 
       	.wprm-recipe-image {
-      		margin: 0;
+      	margin: 0;
       	}
-
       	.wprm-recipe-rating {
-      		margin-bottom: 5px;
-
-      			svg {
-      				vertical-align: middle;
-      				width: 16px;
-      				height: 16px;
-      				margin: 0;
-      			}
-
+      	margin-bottom: 5px;
+      		svg {
+      		vertical-align: middle;
+      		width: 16px;
+      		height: 16px;
+      		margin: 0;
+      		}
       			.wprm-recipe-rating-details {
-      				font-size: 0.8em;
+      			font-size: 0.8em;
       			}
       		}
 
       		.wprm-recipe-print {
       			font-size: 0.9em;
       			cursor: pointer;
+            text-align: left;
       		}
       	}
 
     // en tete de la recette
     .wprm-recipe-name {
-      @include grid-column (8, $principal-grid);
+      @include grid-column(8, $principal-grid);
       float: right;
       clear: both;
       border: $border--moyenne-bleu;
@@ -113,28 +109,29 @@
 
     // détails de la recette
     .wprm-recipe-details-container {
-      @include grid-column (8, $principal-grid);
-      float: right;
-      clear: both;
-      margin-bottom: 15px;
+    @include grid-column (8, $principal-grid);
+    float: right;
+    clear: both;
+    margin-bottom: 15px;
 
       .wprm-recipe-details-icon {
-        display: none;
+      display: none;
       }
+
       .wprm-recipe-details-name {
+      display: inline-block;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-family: $font-family--josefin;
+        &:after {
+        content: " \002f ";
         display: inline-block;
-        font-weight: bold;
-        text-transform: uppercase;
-        font-family: $font-family--josefin;
-          &:after {
-            content: " \002f ";
-            display: inline-block;
-            margin-left: 8px;
-          }
+        margin-left: 8px;
+        }
       }
 
       .wprm-recipe-servings-container {
-        margin-bottom: 24px;
+      margin-bottom: 24px;
       }
     }
 

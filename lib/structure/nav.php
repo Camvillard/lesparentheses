@@ -26,7 +26,7 @@ function unregister_nav_events() {
 add_action( 'genesis_header', 'genesis_do_nav', 4 );
 add_action( 'genesis_header', 'genesis_do_subnav', 12 );
 
-add_filter( 'wp_nav_menu_args', __NAMESPACE__ . '\setup_secondary_menu_args' );
+//add_filter( 'wp_nav_menu_args', __NAMESPACE__ . '\setup_secondary_menu_args' );
 /**
  * Reduce the secondary navigation menu to one level depth.
  *

@@ -25,7 +25,6 @@ function enqueue_assets() {
 	wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css' );
 
 	wp_enqueue_script( CHILD_TEXT_DOMAIN . '-responsive-menu', CHILD_URL . '/assets/js/responsive-menu.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
-	//wp_enqueue_script( CHILD_TEXT_DOMAIN . '-to-top', CHILD_URL . '/assets/js/to-top.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
 	wp_enqueue_style( 'ionicons', '//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css', array(), CHILD_THEME_VERSION );
 
 	$localized_script_args = array(

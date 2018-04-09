@@ -5,13 +5,13 @@
    // padding: 10px 44px;
 
   .wrap {
-    width: $max-width--fullwidth;
+    width: $width--responsive;
     margin: 10px auto;
     position: relative;
     //padding: 10px 24px;
 
     @media only screen and (min-width: $screen-size--regular) {
-    width: $max-width--responsive;
+    width: $width--responsive;
     margin: auto;
     position: relative;
     padding: 0px;
@@ -70,31 +70,31 @@
     @include rem( font-size, $secondary-widget--tablet--title-font-size );
     }
     article {
-      @include grid-column(6, $principal-grid);
-        .entry-title a {
-          @include rem( font-size, $secondary-widget--tablet--article-title-font-size );
-        }
+    @include grid-column(6, $principal-grid);
+      .entry-title a {
+      @include rem( font-size, $secondary-widget--tablet--article-title-font-size );
+      }
     }
   }
 
   @media only screen and (min-width: $screen-size--regular){
     .widget-title {
-      @include rem( font-size, $secondary-widget--tablet--title-font-size );
-      padding-left: 20px;
+    @include rem( font-size, $secondary-widget--tablet--title-font-size );
+    padding-left: 20px;
     }
 
     article {
       .post-info {
-        position: absolute;
-        top: 0;
-        left: -6px;
-        transform: rotate(90deg);
-        transform-origin: top left;
-        @include rem( font-size, $secondary-widget--post-info-font-size );
+      position: absolute;
+      top: 0;
+      left: -6px;
+      transform: rotate(90deg);
+      transform-origin: top left;
+      @include rem( font-size, $secondary-widget--post-info-font-size );
       }
       a.more-link {
-        @include rem (font-size, $secondary-widget--more-link-font-size);
-        padding-right: 10px;
+      @include rem (font-size, $secondary-widget--more-link-font-size);
+      padding-right: 10px;
       }
     }
   }
@@ -107,39 +107,74 @@
   }
 
 
-
-
-
-
-
-
-
 }
 
 // widget du bouton lire les autres articles
 #custom_html-3.widget_text {
-  max-width: $max-width--responsive;
-  width: 100%;
-  margin: 12px auto 24px;
-  text-align: center;
+max-width: $max-width--responsive;
+width: $width--responsive;
+margin: 12px auto 24px;
+text-align: center;
+
   a {
-    border: $border--fine-bleu;
-    padding: 12px 24px;
-    @include rem (font-size, $secondary-widget--mobile--more-link-font-size);
+  border: $border--fine-bleu;
+  padding: 12px 24px;
+  @include rem (font-size, $secondary-widget--mobile--articles-link-font-size);
   }
 
 
-@media only screen and (min-width: $screen-size--medium) {
+  @media only screen and (min-width: $screen-size--medium) {
   @include grid-column(6, $principal-grid);
-  @include grid-push(6);
-  background: $bleu-gris;
-  padding: 10px;
-  a {
-    border: none;
+  @include grid-push(6, $principal-grid);
+    a {
+    background: $bleu-gris;
+    padding: 10px;
+    border: $border--petite-bleu;
     color: $white;
     padding: 12px 24px;
-    @include rem (font-size, $secondary-widget--tablet--more-link-font-size);
+    @include rem (font-size, $secondary-widget--tablet--articles-link-font-size);
+      &:hover {
+      background: $white;
+      color: $bleu-gris;
+      }
+    }
+  }
+
+  @media only screen and (min-width: $screen-size--large) {
+    a {
+    @include rem (font-size, $secondary-widget--articles-link-font-size);
+    }
+  }
+
+  @media only screen and (min-width: $screen-size--huge) {
+    max-width: $max-width;
+    margin: 12px auto 24px;
   }
 }
 
-}
+// widget du bouton lire les autres articles : version en ligne
+// #custom_html-2.widget_text {
+// max-width: $max-width--responsive;
+// width: 100%;
+// margin: 12px auto 24px;
+// text-align: center;
+//   a {
+//     border: $border--fine-bleu;
+//     padding: 12px 24px;
+//     @include rem (font-size, $secondary-widget--mobile--more-link-font-size);
+//   }
+//
+//
+//   @media only screen and (min-width: $screen-size--medium) {
+//   @include grid-column(6, $principal-grid);
+//   @include grid-push(6);
+//   background: $bleu-gris;
+//   padding: 10px;
+//     a {
+//     border: none;
+//     color: $white;
+//     padding: 12px 24px;
+//     @include rem (font-size, $secondary-widget--tablet--more-link-font-size);
+//     }
+//   }
+// }

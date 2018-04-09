@@ -1,0 +1,19 @@
+/* ----- comments : reply ----- */
+
+.comment-reply {
+  margin-top: 20px;
+  margin-left: 84px;
+  font-family: $font-family--josefin;
+  text-transform: lowercase;
+
+  a {
+    border: $border--fine-mint;
+    color: $bleu-gris;
+    padding: 6px 12px;
+    @include rem(font-size, $comments-reply-button--mobile--font-size);
+    &:hover {
+      background: $mint-clair;
+      color: $bleu-gris;
+    }
+  }
+}

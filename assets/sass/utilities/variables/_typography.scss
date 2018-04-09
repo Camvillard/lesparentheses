@@ -44,6 +44,8 @@ $submenu--font-size: 14px;
 $primary-nav--font-size: 14px;
 $archive-pagination--font-size: 16px;
 
+$secondary-nav--plus-font-size: 88px;
+
 //
 // Header
 //==================
@@ -81,7 +83,25 @@ $entry-content--mobile--navigation-font-size: 42px;
 //
 // Comments
 //===================
-$comments--font-size: 16px;
+$comments--font-size: 18px;
+$comments-placeholder--mobile--font-size: 22px;
+$comments-placeholder--tablet--font-size: 22px;
+$comments-placeholder--desktop--font-size: 22px;
+
+$comments-button--mobile--font-size: 24px;
+$comments-button--tablet--font-size: 22px;
+$comments-button--desktop--font-size: 22px;
+
+$comments-list--mobile--comment-author-font-size: 22px;
+$comments-list--tablet--comment-author-font-size: 24px;
+$comments-list--desktop--comment-author-font-size: 28px;
+
+$comments-reply-button--mobile--font-size: 20px;
+$comments-reply-button--tablet--font-size: 24px;
+$comments-reply-button--desktop--font-size: 28px;
+
+
+
 
 //
 // Widgets
@@ -98,7 +118,7 @@ $frontpage-widget--content-font-size: 22px;
 //regular
 $principal-widget--title-font-size: 36px;
 $principal-widget--article-title-font-size: 82px;
-$principal-widget--more-link-font-size: 78px;
+$principal-widget--more-link-font-size: 92px;
 $principal-widget--post-info-font-size: 22px;
 
 //mobile
@@ -110,27 +130,30 @@ $principal-widget--mobile--post-info-font-size: 18px;
 //tablet
 $principal-widget--tablet--title-font-size: 26px;
 $principal-widget--tablet--article-title-font-size: 62px;
-$principal-widget--tablet--more-link-font-size: 72px;
+$principal-widget--tablet--more-link-font-size: 88px;
 $principal-widget--tablet--post-info-font-size: 20px;
 
 
 // regular
 $secondary-widget--title-font-size: 36px;
 $secondary-widget--article-title-font-size: 42px;
-$secondary-widget--more-link-font-size: 52px;
+$secondary-widget--more-link-font-size: 64px;
 $secondary-widget--post-info-font-size: 16px;
+$secondary-widget--articles-link-font-size: 32px;
 
 //mobile
 $secondary-widget--mobile--title-font-size: 18px;
 $secondary-widget--mobile--article-title-font-size: 42px;
-$secondary-widget--mobile--more-link-font-size: 24px;
+$secondary-widget--mobile--more-link-font-size: 48px;
 $secondary-widget--mobile--post-info-font-size: 18px;
+$secondary-widget--mobile--articles-link-font-size: 24px;
 
 //tablet
 $secondary-widget--tablet--title-font-size: 22px;
 $secondary-widget--tablet--article-title-font-size: 42px;
-$secondary-widget--tablet--more-link-font-size: 32px;
+$secondary-widget--tablet--more-link-font-size: 52px;
 $secondary-widget--tablet--post-info-font-size: 16px;
+$secondary-widget--tablet--articles-link-font-size: 28px;
 
 // about widget
 //regular
@@ -228,13 +251,13 @@ $archive-blog--desktop--meta-font-size: 124px;
 //
 // template : soutien
 //===================
-$template-soutien--mobile--title-font-size: 66px;
+$template-soutien--mobile--title-font-size: 42px;
 $template-soutien--tablet--title-font-size: 82px;
 $template-soutien--desktop--title-font-size: 94px;
 
-$template-soutien--mobile--content-font-size: 16px;
-$template-soutien--tablet--content-font-size: 18px;
-$template-soutien--desktop--content-font-size: 20px;
+$template-soutien--mobile--content-font-size: 22px;
+$template-soutien--tablet--content-font-size: 24px;
+$template-soutien--desktop--content-font-size: 26px;
 
 $template-soutien--mobile--btn-font-size: 46px;
 $template-soutien--tablet--btn-font-size: 92px;

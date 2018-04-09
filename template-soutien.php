@@ -59,9 +59,9 @@ add_action( 'genesis_before_footer', __NAMESPACE__ . '\insert_second_blurb',8 );
 add_action( 'genesis_before_footer', __NAMESPACE__ . '\backtoblog' );
  function backtoblog() {
    echo '<div class="footer-soutien">';
-   echo '<a class="btn-soutenir" href="<?php echo home_url(); ?>">soutenir le blog</a>';
-   echo '<a class="btn-retour-au-blog" href="<?php echo home_url(); ?>">retour au blog</a>';
-   echo '<a class="btn-au-hasard" href="<?php echo home_url(); ?>">un article au hasard</a>';
+   echo '<a class="btn-soutenir" href="https://www.patreon.com/camvillard" target="_blank" >soutenir le blog</a>';
+   echo '<a class="btn-retour-au-blog" href="' . get_home_url() . '">retour au blog</a>';
+   echo '<a class="btn-au-hasard" href="#">un article au hasard</a>';
    echo '</div>';
 }
 

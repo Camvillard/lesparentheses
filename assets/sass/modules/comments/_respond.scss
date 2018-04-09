@@ -1,16 +1,169 @@
-//
-// Comment Respond
-//========================
+/* ----- comments : respond ----- */
+
 
 .comment-respond {
-  label {
+
+
+  //regular user
+  .comment-form-comment {
+
+    label {
     display: block;
-    margin-right: 12px;
+    @include rem( font-size, $comments-placeholder--mobile--font-size);
+    color: $taupe-clair;
+    padding: 16px;
+    text-transform: lowercase;
+    opacity: 1;
+    }
+
+    textarea {
+    border: none;
+    // border-bottom: $border--fine-taupe;
+    color: $taupe-clair;
+    background: $taupe-clair;
+    clear: both;
+    }
   }
 
-  input[type="email"],
-  input[type="text"],
-  input[type="url"] {
-    width: 50%;
+  .comment-form-author,
+  .comment-form-email,
+  .comment-form-url {
+    label {
+    display: none;
+    }
   }
+
+  ::-moz-placeholder {
+    color: $taupe-clair;
+    opacity: 1;
+  }
+
+  ::-webkit-input-placeholder {
+    color: $taupe-clair;
+    opacity: 1;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="url"]{
+  border: none;
+  border-bottom: $border--fine-taupe;
+  @include rem( font-size, $comments-placeholder--mobile--font-size);
+  color: $taupe-clair;
+  }
+
+  input[type="submit"] {
+  float: right;
+  background-color: $bleu-gris;
+  border: $border--fine-bleu;
+  color: $white;
+  cursor: pointer;
+  @include rem( font-size, $comments-button--mobile--font-size );
+  font-family: $font-family--josefin;
+  font-weight: $font-weight--bold;
+  padding: 12px 24px;
+  text-transform: lowercase;
+  text-decoration: none;
+  white-space: normal;
+    &:hover {
+    background-color: $white;
+    color: $bleu-gris;
+    }
+  }
+
+  input:focus,
+  textarea:focus {
+  color: $bleu-gris;
+  }
+  .comment-reply-title {
+    text-transform: lowercase;
+    color: $bleu-gris;
+    background: $mint-clair;
+    width: 60%;
+    margin: auto;
+  }
+
+
+  @media only screen and (min-width: $screen-size--medium) {
+    input[type="text"],
+    input[type="email"],
+    input[type="url"]{
+    @include rem( font-size, $comments-placeholder--tablet--font-size);
+    }
+    input[type="submit"] {
+    @include rem( font-size, $comments-button--tablet--font-size );
+    }
+  }
+
+  @media only screen and (min-width: $screen-size--regular) {
+    .comment-form-author {
+    @include grid-column(6, $principal-grid);
+    }
+    .comment-form-email {
+    @include grid-column(6, $principal-grid);
+    clear: both;
+    }
+    .comment-form-url {
+    @include grid-column(6, $principal-grid);
+    // float: right;
+    clear: both;
+    }
+    .comment-form-comment {
+    @include grid-column(6, $principal-grid);
+    // display:inline;
+    float: right;
+    clear: none;
+    margin-top: -160px;
+      label {
+      // @include grid-column(5, $principal-grid);
+      // float: right;
+      // clear: both;
+      // @include grid-push(6, $principal-grid);
+      @include rem( font-size, $comments-placeholder--desktop--font-size);
+      }
+      textarea {
+      height: 160px;
+      // @include grid-column(5, $principal-grid);
+      // @include grid-push(6, $principal-grid);
+      // float: right;
+      border: none;
+      clear: none;
+      }
+    }
+    .form-submit {
+    @include grid-column(6, $principal-grid);
+    @include grid-push(6, $principal-grid);
+    float: right;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="url"] {
+    @include rem( font-size, $comments-placeholder--desktop--font-size);
+    }
+    input[type="submit"] {
+    @include rem( font-size, $comments-button--desktop--font-size );
+    }
+  }
+}
+
+
+.logged-in {
+  .comment-reply-title,
+  .logged-in-as {
+  text-align: center;
+  }
+
+
+  @media only screen and (min-width: $screen-size--regular) {
+    .comment-form-comment {
+    @include grid-column(12, $principal-grid);
+    float: none;
+    clear: none;
+    margin-top: 10px;
+    padding: 0px;
+    }
+  }
+
+
 }

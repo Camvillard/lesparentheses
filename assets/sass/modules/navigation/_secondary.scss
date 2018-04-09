@@ -3,20 +3,49 @@
 //===========================
 
 .nav-secondary {
-  background-color: $secondary-nav--background-color;
-  @include grid-column(4);
-  float: right;
+  background-color: none;
+  position: fixed;
+  top: 52px;
+  right: 24px;
+
 }
 
 .menu-secondary {
 
   .menu-item {
-    display: block;
+  display: block;
   }
-
   a {
     padding: 8px 12px;
     text-align: center;
+    @include rem(font-size, $secondary-nav--plus-font-size);
+  }
+
+  .sub-menu {
+    border-top: none;
+    left: -9999px;
+    opacity: 0;
+    position: absolute;
+    transition: opacity .4s ease-in-out;
+    width: 200px;
+    z-index: 99;
+    margin: -52px 0 0 -200px;
+
+    a {
+      background-color: $submenu--link-background-color;
+      border: none;
+      border-top: 0;
+      border-bottom: $border--fine-taupe;
+      @include rem( font-size, $submenu--font-size );
+      padding: 20px;
+      position: relative;
+      width: 200px;
+      word-wrap: break-word;
+    }
+
+    .sub-menu {
+      margin: -50px 0 0 -199px;
+    }
   }
 }
 

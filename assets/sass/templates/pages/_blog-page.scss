@@ -92,21 +92,41 @@
       &.has-post-thumbnail {
         clear: both;
         margin: 12px auto 24px;
+        .entry-content {
+          a.more-link {
+          float: right;
+          @include rem(font-size, $archive-blog--tablet--more-link-font-size);
+          font-weight: $font-weight--bold;
+          color: $principal-widget--more-link-color;
+            &::before {
+              content: "";
+              background: url(assets/images/btn_more.svg) no-repeat;
+              width: 62px;
+              height: 57px;
+              position: absolute;
+              left: -12px;
+              top: 16px;
+              z-index: -1;
+            }
+          }
+        }
         .entry-footer {
-        background: $gris-clair;
+        border-top: $border--fine-taupe;
+        border-bottom: $border--fine-taupe;
+        margin: 16px auto 52px;
           .entry-meta {
-          color: $white;
+          color: $taupe-fonce;
           padding-top: 10px;
           text-align: center;
           margin-bottom: 0px;
-          a {
-          color: $white;
-            &:hover {
-            background: $bleu-gris;
-            color: $white;
-            font-style: italic;
+            a {
+            color: $taupe-fonce;
+              &:hover {
+              background: $bleu-gris;
+              color: $white;
+              font-style: italic;
+              }
             }
-          }
           }
         }
       }
@@ -115,7 +135,36 @@
   }
 
 
-
+  // @media only screen and (min-width: $screen-size--large) {
+  //   article {
+  //     // gère les articles avec image à la une
+  //     &.has-post-thumbnail {
+  //       margin: 22px auto 34px;
+  //       .entry-footer {
+  //       background: $gris-clair;
+  //       margin: 16px auto 52px;
+  //         .entry-meta {
+  //         color: $white;
+  //         padding-top: 10px;
+  //         text-align: center;
+  //         margin-bottom: 0px;
+  //         a {
+  //         color: $white;
+  //           &:hover {
+  //           background: $bleu-gris;
+  //           color: $white;
+  //           font-style: italic;
+  //           }
+  //         }
+  //         }
+  //       }
+  //     }
+  //
+  //
+  //
+  //   }
+  //
+  // }
 
 
 

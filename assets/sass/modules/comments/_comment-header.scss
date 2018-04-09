@@ -1,11 +1,29 @@
-//
-// Comment Header
-//====================
+/* ----- comments : header ----- */
 
 .comment-header {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 
   p {
-    margin-bottom: 0;
+  margin-bottom: 0;
+  }
+
+  .comment-author {
+  text-transform: lowercase;
+  font-family: $font-family--josefin;
+  @include rem(font-size, $comments-list--mobile--comment-author-font-size);
+  color: $bleu-gris;
+    a {
+    color: $bleu-gris;
+      &:hover {
+      background: $mint-clair;
+      }
+    }
+  }
+
+  .comment-time {
+    background: $mint-clair;
+    a {
+      color: $bleu-gris;
+    }
   }
 }

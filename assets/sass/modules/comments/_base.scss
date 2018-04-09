@@ -10,8 +10,8 @@
   margin-bottom: 40px;
 
   @media only screen and (max-width: 860px) {
-    padding: 30px;
-    margin-bottom: 5%;
+  padding: 30px;
+  margin-bottom: 5%;
   }
 }
 
@@ -22,6 +22,14 @@
 
 .entry-comments {
   padding: 60px;
+  h3 {
+    background: $mint-clair;
+    text-transform: lowercase;
+    color: $bleu-gris;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+  }
 }
 
 .entry-pings .reply {

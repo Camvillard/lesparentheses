@@ -12,8 +12,9 @@
  */
 
  namespace lesparentheses;
-
+remove_action( 'genesis_entry_header', 'lesparentheses\Structure\featured_post_image', 13 );
 remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
+
 
  add_filter( 'body_class', __NAMESPACE__ . '\add_custom_body_class', 1 );
  /**
