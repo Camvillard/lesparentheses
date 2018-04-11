@@ -1,7 +1,7 @@
 <?php
 /**
  *
- * Template Name: about
+ * Template Name: montreal
  *
  *
  * @package     lesparentheses
@@ -11,7 +11,7 @@
  * @license     GNU General Public License 2.0+
  */
 
- namespace lesparentheses\about;
+ namespace lesparentheses\montreal;
 
 
 
@@ -38,19 +38,9 @@ remove_action( 'genesis_footer', 'genesis_footer_markup_close', 15 );
   * @return array
   */
   function add_custom_body_class( array $body_classes ) {
- 	$body_classes[] = 'page-about';
+ 	$body_classes[] = 'page-montreal';
  	return $body_classes;
   }
-
-
-// add the next page button
-add_action( 'genesis_before_footer', __NAMESPACE__ . '\backtoblog' );
- function backtoblog() {
-   echo '<div class="footer-about">';
-   echo '<a class="btn-retour-au-blog" href="' . get_home_url() . '">retour au blog</a>';
-   echo '<a class="btn-au-hasard" href="#">un article au hasard</a>';
-   echo '</div>';
-}
 
 
 
