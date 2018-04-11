@@ -7,10 +7,6 @@
   max-width: $max-width--fullwidth;
   margin: 70px auto 20px;
   position: relative;
-  // padding: 10px 44px !important;
-    // @media only screen and (min-width: $screen-size--medium) {
-    // padding: 10px 42px !important;
-    // }
     @media only screen and (min-width: $screen-size--regular) {
     margin: 90px auto 20px;
     }
@@ -57,7 +53,7 @@
       text-decoration: none;
       font-weight: $font-weight--bold;
       &:hover {
-      color: $principal-widget--more-link-color-hover;  
+      color: $principal-widget--more-link-color-hover;
       }
       &::before {
         content: "";
@@ -105,7 +101,7 @@
     @include rem( font-size, $principal-widget--title-font-size );
     transform: rotate(-90deg);
     position: absolute;
-    left: 0px;
+    left: 20px;
     top: 45%;
     }
 
@@ -138,9 +134,18 @@
     }
   }
 
+  @media only screen and (min-width: $screen-size--large) {
+    .widget-title {
+    left: -20px;
+    }
+  }
+
   @media only screen and (min-width: $screen-size--huge) {
   max-width: $max-width;
   margin: auto;
+  .widget-title {
+  left: 4%;
+  }
   }
 
   }

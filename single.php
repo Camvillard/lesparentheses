@@ -49,7 +49,7 @@ add_action( 'genesis_after_entry_content', __NAMESPACE__ . '\prev_next_post_nav'
 // change les metas
 add_filter( 'genesis_post_meta', __NAMESPACE__ . '\custom_post_metas');
   function custom_post_metas($metas_des_articles) {
- 		$metas_des_articles = '[post_categories before="classé dans : " sep="&#160;/"][post_comments zero="Il n&apos;a pas encore de commentaire, et c&apos;est franchement dommage" one="il y a déjà un commentaire, vous avez le droit de copier" more="Il y a déjà % commentaires"]';
+ 		$metas_des_articles = '[post_categories before="classé dans : " sep="&#160;/"][post_comments zero="Il n&apos;a pas encore de commentaire, et c&apos;est franchement dommage" one="il y a déjà un commentaire, glissez donc un petit mot vous aussi" more="Il y a déjà % commentaires, glissez donc un petit mot vous aussi"]';
  		return $metas_des_articles;
 }
 

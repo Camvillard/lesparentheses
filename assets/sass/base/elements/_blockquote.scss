@@ -1,18 +1,29 @@
 blockquote {
-  margin: 40px;
+  margin: 40px auto;
   font-style: italic;
   color: $gris-moyen;
   @include rem( font-size, $blockquote--font-size );
-
-  &::before {
-    content: "\00ab";
-    display: block;
-    @include rem( font-size, $blockquote--bullet-font-size );
-    font-weight: $font-weight--bold;
-    height: 0;
-    left: -50px;
-    position: relative;
-    top: -80px;
-    color: $mint-clair;
+  width: 75%;
+  outline: $border--fine-blanc;
+  outline-offset: -12px;
+  background: $mint-clair;
+  padding: 24px;
+  position: relative;
+  p {
+    margin: 0px;
   }
+
+  // &::before {
+  //   content: "\201C";
+  //   display: block;
+  //   @include rem( font-size, $blockquote--bullet-font-size );
+  //   font-family: $font-family--josefin;
+  //   font-weight: $font-weight--bold;
+  //   font-style: normal;
+  //   height: 0;
+  //   left: 0px;
+  //   position: absolute;
+  //   top: -20px;
+  //   color: $mint-clair;
+  // }
 }

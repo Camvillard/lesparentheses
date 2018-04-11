@@ -32,8 +32,26 @@
         margin-bottom: 12px;
         padding: 6px;
           .entry-title a{
-            color: $white;
+          color: $white;
           @include rem(font-size, $archive-blog--tablet--pp-title-font-size);
+          }
+        }
+        .entry-content {
+          a.more-link {
+          float: right;
+          @include rem(font-size, $archive-blog--tablet--pp-more-link-font-size);
+          font-weight: $font-weight--bold;
+          color: $white;
+            &::before {
+              content: "";
+              background: url(assets/images/btn_more-2.svg) no-repeat;
+              width: 50px;
+              height: 50px;
+              position: absolute;
+              left: -12px;
+              top: 0px;
+              z-index: -1;
+            }
           }
         }
         .entry-footer {
@@ -67,6 +85,24 @@
             .entry-title a{
               color: $white;
             @include rem(font-size, $archive-blog--tablet--pp-title-font-size);
+            }
+          }
+          .entry-content {
+            a.more-link {
+            float: right;
+            @include rem(font-size, $archive-blog--tablet--pp-more-link-font-size);
+            font-weight: $font-weight--bold;
+            color: $white;
+              &::before {
+                content: "";
+                background: url(assets/images/btn_more-3.svg) no-repeat;
+                width: 50px;
+                height: 45px;
+                position: absolute;
+                left: -16px;
+                top: 2px;
+                z-index: -1;
+              }
             }
           }
           .entry-footer {
@@ -134,37 +170,6 @@
 
   }
 
-
-  // @media only screen and (min-width: $screen-size--large) {
-  //   article {
-  //     // gère les articles avec image à la une
-  //     &.has-post-thumbnail {
-  //       margin: 22px auto 34px;
-  //       .entry-footer {
-  //       background: $gris-clair;
-  //       margin: 16px auto 52px;
-  //         .entry-meta {
-  //         color: $white;
-  //         padding-top: 10px;
-  //         text-align: center;
-  //         margin-bottom: 0px;
-  //         a {
-  //         color: $white;
-  //           &:hover {
-  //           background: $bleu-gris;
-  //           color: $white;
-  //           font-style: italic;
-  //           }
-  //         }
-  //         }
-  //       }
-  //     }
-  //
-  //
-  //
-  //   }
-  //
-  // }
 
 
 

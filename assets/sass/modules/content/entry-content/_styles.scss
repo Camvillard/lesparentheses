@@ -35,11 +35,6 @@
     z-index: 10;
     font-family: $font-family--roboto;
     @include rem( font-size, $entry-content--h5-font-size);
-
-    // &:before {
-    //   content: url(assets/images/blurb-bg-pink_1.png);
-    //   margin-right: -30px;
-    // }
     &::before {
       position: absolute;
       content: " ";
@@ -58,5 +53,6 @@
   h6 {
     text-transform: uppercase;
     @include rem( font-size, $entry-content--h6-font-size);
+    color: $bleu-gris;
   }
 }

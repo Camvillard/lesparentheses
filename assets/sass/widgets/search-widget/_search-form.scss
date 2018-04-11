@@ -1,7 +1,8 @@
 /* ----- search form : page d'accueil ----- */
 
 .search-footer .widget_search {
-max-width: $width--responsive;
+  max-width: $max-width;
+  margin: auto;  
   .search-form {
     padding: 10px 90px;
   }
@@ -36,7 +37,7 @@ max-width: $width--responsive;
 
   @media only screen and (min-width: $screen-size--huge){
   max-width: $max-width;
-  margin: auto;  
+  margin: auto;
   }
 
 }

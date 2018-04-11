@@ -1,0 +1,54 @@
+/* ----- template spécial : page à propos ----- */
+
+body.page-about {
+border: none;
+}
+
+.page-about {
+  min-height: 100vh;
+
+  .site-inner {
+    margin: 40px auto;
+  }
+
+  .wrap {
+    width: $width--responsive;
+    max-width: $max-width;
+  }
+
+  .about-un {
+    @include grid-column(8, $principal-grid);
+    background: $taupe-clair;
+  }
+
+  .about-deux {
+    @include grid-column(4, $principal-grid);
+    border: $border--fine-mint;
+    clear: right;
+  }
+
+  .about-trois {
+    @include grid-column(6, $principal-grid);
+    @include grid-push(2, $principal-grid)
+    border: $border--fine-bleu;
+    clear: both;
+  }
+
+  .about-quatre {
+    @include grid-column(6, $principal-grid);
+    border: $border--large-gris;
+    clear: both;
+  }
+
+  .about-fin {
+    @include grid-column(4, $principal-grid);
+    @include grid-push(8, $principal-grid);
+    border: $border--huge-bleu;
+  }
+
+
+
+
+
+
+}

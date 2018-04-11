@@ -20,7 +20,7 @@ $font-weight--extra-bold: 900;
 
 // Headings
 $headings--font-family: $font-family--josefin;
-$headings--line-height: 1.4;
+$headings--line-height: 1.3;
 $h1--font-size:  42px;
 $h2--font-size:  30px;
 $h3--font-size:  24px;
@@ -32,7 +32,7 @@ $h6--font-size:  16px;
 
 // Elements
 $blockquote--font-size: 22px;
-$blockquote--bullet-font-size: 146px;
+$blockquote--bullet-font-size: 186px;
 $input--font-size: 18px;
 $button--font-size: 16px;
 
@@ -240,6 +240,10 @@ $archive-blog--mobile--more-link-font-size: 16px;
 $archive-blog--tablet--more-link-font-size: 92px;
 $archive-blog--desktop--more-link-font-size: 124px;
 
+$archive-blog--mobile--pp-more-link-font-size: 16px;
+$archive-blog--tablet--pp-more-link-font-size: 52px;
+$archive-blog--desktop--pp-more-link-font-size: 114px;
+
 $archive-blog--mobile--post-info-font-size: 16px;
 $archive-blog--tablet--post-info-font-size: 92px;
 $archive-blog--desktop--post-info-font-size: 124px;
@@ -247,6 +251,17 @@ $archive-blog--desktop--post-info-font-size: 124px;
 $archive-blog--mobile--meta-font-size: 16px;
 $archive-blog--tablet--meta-font-size: 92px;
 $archive-blog--desktop--meta-font-size: 124px;
+
+//
+// archives : categories et tags
+//==================================
+$archive-cat--mobile--title-font-size: 58px;
+$archive-cat--tablet--title-font-size: 64px;
+$archive-cat--desktop--title-font-size: 84px;
+
+$archive-cat--mobile--more-link-font-size: 40px;
+$archive-cat--tablet--more-link-font-size: 68px;
+$archive-cat--desktop--more-link-font-size: 84px;
 
 //
 // template : soutien
@@ -262,6 +277,33 @@ $template-soutien--desktop--content-font-size: 26px;
 $template-soutien--mobile--btn-font-size: 46px;
 $template-soutien--tablet--btn-font-size: 92px;
 $template-soutien--desktop--btn-font-size: 124px;
+
+
+//
+// template : contact
+//===================
+$template-contact--mobile--title-font-size: 42px;
+$template-contact--tablet--title-font-size: 82px;
+$template-contact--desktop--title-font-size: 142px;
+
+$template-contact--mobile--content-font-size: 22px;
+$template-contact--tablet--content-font-size: 24px;
+$template-contact--desktop--content-font-size: 26px;
+
+$template-contact--mobile--bouton-font-size: 42px;
+$template-contact--tablet--bouton-font-size: 24px;
+$template-contact--desktop--bouton-font-size: 26px;
+
+$template-contact--mobile--bouton-hover-font-size: 32px;
+$template-contact--tablet--bouton-hover-font-size: 24px;
+$template-contact--desktop--bouton-hover-font-size: 26px;
+
+$template-contact--mobile--btn-font-size: 46px;
+$template-contact--tablet--btn-font-size: 92px;
+$template-contact--desktop--btn-font-size: 124px;
+
+
+
 
 //
 // search widget

@@ -31,7 +31,7 @@ function custom_post_info($info_des_articles) {
 // change les metas
 add_filter( 'genesis_post_meta', __NAMESPACE__ . '\custom_post_meta');
 function custom_post_meta($metas_des_articles) {
-  $metas_des_articles = '[post_categories before="catégorie(s)&nbsp;// " sep="&nbsp;/"][post_tags before="étiquette(s)&nbsp;// " sep="&nbsp;/"][post_comments zero="il n&apos;a pas encore de commentaire ; c&apos;est dommage" one="il y a déjà un commentaire, vous avez le droit de copier" more="Il y a déjà % commentaires"]';
+  $metas_des_articles = '[post_categories before="catégorie(s)&nbsp;// " sep="&nbsp;/"][post_tags before="étiquette(s)&nbsp;// " sep="&nbsp;/"][post_comments zero="Il n&apos;a pas encore de commentaire, et c&apos;est franchement dommage" one="il y a déjà un commentaire, glissez donc un petit mot vous aussi" more="Il y a déjà % commentaires, glissez donc un petit mot vous aussi"]';
   return $metas_des_articles;
 }
 

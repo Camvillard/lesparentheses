@@ -14,7 +14,7 @@
   clear: both;
   padding-top: 40px;
   word-wrap: break-word;
-  padding: 5% 5% 0;
+  padding: 2vh 4vw;
   }
 
 .landing-page .site-inner {
@@ -23,7 +23,7 @@
 
 @media only screen and (min-width: $screen-size--medium) {
   .site-inner {
-    padding: 2% 2% 0;
+    padding: 4vh 4vw;
   }
   .wrap {
     padding-left: 4%;
@@ -31,11 +31,11 @@
   }
 }
 
-@media only screen and (min-width: $screen-size--huge) {
+@media only screen and (min-width: $screen-size--large) {
   .site-inner {
     max-width: $max-width;
     margin: auto;
-    padding: 2% 2% 0;
+    // padding: 4vh 4vw;
   }
   .wrap {
     //max-width: $max-width;

@@ -2,3 +2,13 @@ p.entry-meta {
   @include rem( font-size, $entry-meta--font-size );
   margin-bottom: 0;
 }
+
+.entry-meta {
+  a {
+    text-decoration: none;
+    &:hover {
+      background: $gris-argent;
+      color: $white;
+    }
+  }
+}

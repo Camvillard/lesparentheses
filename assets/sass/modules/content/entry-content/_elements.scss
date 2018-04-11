@@ -11,6 +11,10 @@
     }
   }
 
+  a.pinit-button.custom {
+    border-bottom: none !important;
+  }
+
   ol, ul {
     margin-bottom: 28px;
     margin-left: 40px;
@@ -35,20 +39,39 @@
   }
 
   // share & like section
-  .et_social_networks {
-    border-top: $border--fine-mint;
-    padding-top: 12px;
-    .et_social_icons_container {
-      width: 100%;
-      margin: auto;
-    }
+  // .et_social_networks {
+  //
+  //   .et_social_icons_container {
+  //     width: 100%;
+  //     margin: auto;
+  //   }
+  //
+  //   a.et_social_share {
+  //     margin: 2px !important;
+  //     &:hover {
+  //       background: none;
+  //     }
+  //   }
+  // }
 
-    a.et_social_share {
-      margin: 2px !important;
-      &:hover {
-        background: none;
-      }
-    }
+
+// .heateor_sss_sharing_container {
+//   border-top: $border--fine-mint;
+//   padding-top: 12px;
+//   position: relative;
+//   left: 0%;
+//   text-align: center;
+// }
+  .heateor_sss_sharing_title {
+    margin-top: 24px;
+    text-transform: lowercase !important;
+    font-weight: $font-weight--light !important;
+    @include rem(font-size, $base--font-size);
+    text-align: center;
+  }
+
+.heateorSssSharingRound {
+    margin: 4px 8px !important;
   }
 
 
