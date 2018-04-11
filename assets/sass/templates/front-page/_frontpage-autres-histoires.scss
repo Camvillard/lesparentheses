@@ -110,7 +110,8 @@
 }
 
 // widget du bouton lire les autres articles
-#custom_html-3.widget_text {
+#custom_html-3.widget_text,
+#custom_html-2.widget_text {
 max-width: $max-width--responsive;
 width: $width--responsive;
 margin: 12px auto 24px;
